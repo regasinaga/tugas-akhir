@@ -1,0 +1,102 @@
+\chapter{Metodologi dan Desain Sistem}
+
+\section{Desain Sistem}
+Sebelum masuk pada fase pengembangan sistem, menentukan desain kasar sistem merupakan hal yang krusial. Hal tersebut disebabkan karena memahami komponen apa saja yang ada pada sistem dan relasi antar komponen dapat membantu menentukan arah pengembangan sistem. 
+ 
+\subsection{Arsitektur Sistem}
+\par
+Gambar 3.1 menjelaskan desain arsitektur sistem dan relasi-relasi antar komponen.
+\newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{img/arch_sys.png}
+    \caption{Gambaran komponen-komponen sistem dan relasinya}
+    \label{fig:Gambar}
+\end{figure}
+\par
+Komponen-komponen RS yang akan dikembangkan penyusun terdiri dari \textit{client}, \textit{Node.js server}, basis data \textit{Ontology} dan \textit{Google Maps API}. \textit{Client} berkomunikasi dengan \textit{Google Maps API} untuk menampilkan data lokasi pengguna dan tujuan wisata, serta berkomunikasi dengan \textit{OpenWeatherMap API} untuk mendapatkan data cuaca. Sedangkan \textit{Client} berkomunikasi dengan \textit{Web server} untuk mendapatkan rekomendasi tujuan wisata. \textit{Web server} melakukan \textit{reasoning} dengan menggunakan \textit{SPARQL query}.
+
+\subsection{Model Ontology}
+
+Gambar 3.2 adalah garis besar model \textit{ontology} yang merepresentasikan pengetahuan sistem yang akan dibangun:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{img/ontology.png}
+    \caption{Gambar \textit{ontology} representasi pengetahuan RS}
+    \label{fig:Gambar}
+\end{figure}
+\newline
+Struktur \textit{ontology} dibangun berdasarkan asumsi bahwa tempat wisata yang dapat dikunjungi ketika hujan juga dapat dikunjungi ketika cuaca cerah, tetapi tidak berlaku sebaliknya. Strukturnya juga menyimpan informasi mengenai lokasi dan waktu buka tempat wisata.
+ 
+\subsection{Flowchart Sistem}
+Secara umum, aliran kerja sistem dijelaskan pada gambar 3.3 dibawah ini:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{img/flowchart-general.png}
+    \caption{Gambaran aliran kerja sistem yang dikembangkan}
+    \label{fig:Gambar}
+\end{figure}
+\textit{Flowchart} sistem pada gambar 3.3 dapat dijelaskan secara umum sebagai tiga kegiatan utama. Tiga kegiatan tersebut adalah mendapatkan alur mendapatkan informasi kontekstual dan preferensi tujuan wisata pengguna, melakukan \textit{reasoning} di \textit{web server} berdasar data yang masuk, dan mendapatkan rekomendasi tujuan wisata secara visual.
+\section{Metodologi Pengembangan Sistem}
+
+Tugas akhir ini akan disusun dengan melalui tahap-tahap berikut:
+\begin{enumerate}
+
+\item Desain Sistem
+\par
+Dalam tahap ini ada dua bagian, yaitu desain struktur \textit{ontology} dan pengembangan sistem.
+\par
+Tahap-tahap dalam mendesain struktur \textit{ontology} mengikuti \textit{Methontology} \cite{jones1998methodologies}, yaitu:
+\begin{enumerate}
+	\item Spesifikasi
+	\item Akuisisi pengetahuan
+	\item Konseptualisasi
+	\item Integrasi
+	\item Implementasi
+	\item Evaluasi
+	\item Dokumentasi
+\end{enumerate} 
+Berdasarkan lima komponen penting pada RS yang telah dijelaskan di gambar 3.1, berikut adalah langkah bagian pengembangan sistem yang akan ditempuh:
+\begin{enumerate}
+	\item Merancang GUI pada sisi \textit{client}.
+	\item Merancang skema interaksi penggunaan aplikasi.
+	\item Merancang format data yang dipertukarkan antara \textit{client} dan \textit{web server}.
+	\item Merancang algoritma pada sisi \textit{client} dan \textit{web server}.
+	\item Merancang \textit{query} untuk mengakuisisi pengetahuan pada data yang disimpan di \textit{SPARQL}.
+\end{enumerate}
+
+\item Pengumpulan Data Lokasi Wisata Bandung
+\newline
+Tujuan tahap ini adalah mendapatkan data lokasi wisata. Metode yang dapat dilakukan adalah:
+\begin{enumerate}
+	\item Observasi.
+	Metode observasi dilakukan untuk mendapatkan data lokasi wisata yang tidak dikelola oleh pihak swasta.
+	\item Wawancara pihak pengelola tempat wisata.
+	Metode wawancara dilakukan untuk lokasi wisata yang dikelola oleh pihak swasta.
+\end{enumerate}
+\par
+Tujuan dari tahap ini adalah mendapatkan data koordinat tujuan wisata di \textit{Google Maps}, analisis kondisi tujuan wisata pada cuaca cerah dan hujan, serta waktu ketika tujuan wisata dapat diakses.
+
+\item Implementasi Sistem
+\newline
+Tahap implementasi meliputi:
+\begin{enumerate}
+	\item Pengembangan aplikasi Android.
+	\item Pengembangan sisi \textit{server}.
+	\item Implementasi komunikasi antar isi \textit{client} dan sisi \textit{server} serta \textit{client} dan \textit{Google Maps API}.
+	\item Implementasi \textit{ontology} pada basis data \textit{SPARQL}.
+\end{enumerate}
+ 
+\item Pengujian
+\newline
+Tahap pengujian memiliki dua jenis pengujian:
+\begin{enumerate}
+	\item Pengujian utnuk menemukan \textit{bug}. Untuk menemukan \textit{bug}, sistem akan diuji coba dengan menggunakan skema \textit{white box}.
+	\item Pengujian akurasi sistem. 
+\end{enumerate}
+
+\item Pembuatan Laporan
+\newline 
+Laporan akhir akan ditulis sesuai dengan kaidah dan ketetapan yang berlaku di institusi.
+\end{enumerate}
+
