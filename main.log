@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.19)  20 DEC 2016 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.19)  11 JAN 2017 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -908,7 +908,16 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \f@ncyO@erf=\skip60
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
-) (./main.aux)
+) (./main.aux
+(./Cover.aux) (./Lembar-Persetujuan.aux) (./Abstrak-Indo.aux)
+(./Pendahuluan.aux) (./Kajian-Pustaka.aux) (./Metodologi.aux
+
+LaTeX Warning: Label `fig:Gambar' multiply defined.
+
+
+LaTeX Warning: Label `fig:Gambar' multiply defined.
+
+) (./Lampiran.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
@@ -1045,21 +1054,6 @@ Overfull \hbox (80.90549pt too wide) in paragraph at lines 42--46
 
  (./Pendahuluan.tex
 Bab I.
-
-LaTeX Warning: Citation `bps1' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation `bps2' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation `alhazbi2013' on page 1 undefined on input line 9.
-
-
-LaTeX Warning: Citation `alhazbi2013' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: Citation `jakkhupan2015' on page 1 undefined on input line 11.
-
 [1
 
 
@@ -1074,54 +1068,11 @@ Overfull \hbox (69.83261pt too wide) in paragraph at lines 60--72
 
  (./Kajian-Pustaka.tex
 Bab II.
-
-LaTeX Warning: Citation `ricci2011book' on page 4 undefined on input line 5.
-
-
-LaTeX Warning: Citation `moreno2013sigtur' on page 4 undefined on input line 11
-.
-
-
-LaTeX Warning: Citation `castillo2008samap' on page 4 undefined on input line 1
-3.
-
-
-LaTeX Warning: Citation `blanco2008flexible' on page 4 undefined on input line 
-14.
-
-
-LaTeX Warning: Citation `ricci2011book' on page 4 undefined on input line 14.
-
 [4
 
 
 
-]
-
-LaTeX Warning: Citation `ricci2011book' on page 5 undefined on input line 20.
-
-
-LaTeX Warning: Citation `ricci2011book' on page 5 undefined on input line 22.
-
-
-LaTeX Warning: Citation `van2004context' on page 5 undefined on input line 22.
-
-
-LaTeX Warning: Citation `abowd1997cyberguide' on page 5 undefined on input line
- 22.
-
-
-LaTeX Warning: Citation `ricci2011book' on page 5 undefined on input line 22.
-
-[5]
-
-LaTeX Warning: Citation `jones1998methodologies' on page 6 undefined on input l
-ine 30.
-
-
-LaTeX Warning: Citation `androidmarket' on page 6 undefined on input line 45.
-
-[6] [7]) [8]
+] [5] [6] [7]) [8]
 \openout2 = `Metodologi.aux'.
 
  (./Metodologi.tex
@@ -1161,12 +1112,8 @@ Overfull \hbox (0.95624pt too wide) in paragraph at lines 35--36
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./img/ontology.png>]
-
-LaTeX Warning: Citation `jones1998methodologies' on page 11 undefined on input 
-line 49.
-
-[11 <./img/flowchart-general.png>] [12]) [13] (./main.bbl
+[10 <./img/ontology.png>] [11 <./img/flowchart-general.png>] [12]) [13]
+(./main.bbl
 Underfull \hbox (badness 1939) in paragraph at lines 16--22
 \OT1/cmr/m/sc/12 Ramos-Cabrer, M., L[]opez-Nores, M., Garc[]^^Pa-Duque, J.,
  []
@@ -1202,17 +1149,14 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16139 strings out of 493014
- 304436 string characters out of 6137000
- 367573 words of memory out of 5000000
- 19290 multiletter control sequences out of 15000+600000
+ 16160 strings out of 493014
+ 304761 string characters out of 6137000
+ 370656 words of memory out of 5000000
+ 19297 multiletter control sequences out of 15000+600000
  11944 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,56p,1280b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1222,7 +1166,7 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/20
 -dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (20 pages, 571922 bytes).
+Output written on main.pdf (20 pages, 571543 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
