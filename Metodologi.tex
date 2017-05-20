@@ -9,12 +9,15 @@ Gambar 3.1 menjelaskan desain arsitektur sistem dan relasi-relasi antar komponen
 \newline
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.5]{img/arch_sys.png}
+    \includegraphics[scale=0.5]{img/arsitektur_sistem.png}
     \caption{Gambaran komponen-komponen sistem dan relasinya}
     \label{fig:Gambar}
 \end{figure}
 \par
-Komponen-komponen RS yang akan dikembangkan penyusun terdiri dari \textit{client}, \textit{Node.js server}, basis data \textit{Ontology} dan \textit{Google Maps API}. \textit{Client} berkomunikasi dengan \textit{Google Maps API} untuk menampilkan data lokasi pengguna dan tujuan wisata, serta berkomunikasi dengan \textit{OpenWeatherMap API} untuk mendapatkan data cuaca. Sedangkan \textit{Client} berkomunikasi dengan \textit{Web server} untuk mendapatkan rekomendasi tujuan wisata. \textit{Web server} melakukan \textit{reasoning} dengan menggunakan \textit{SPARQL query}.
+Komponen-komponen RS yang akan dikembangkan penyusun terdiri dari \textit{client}, \textit{server}, basis data dengan fail OWL, Google Maps API dam OpenWeatherMap API. 
+\textit{Client} berkomunikasi dengan Google Maps API untuk menampilkan data lokasi pengguna dan tujuan wisata. Selanjutnya \textit{client} mengirimkan \textit{HTTP request} ke 
+\textit{server} dengan menyertakan data lokasi dan preferensi pengguna. Ketika \textit{server} menerima \textit{HTTP request}, \textit{server} akan membalas dengan 
+\textit{HTTP response} yang berisi daftar rekomendasi tujuan wisata.
 
 \subsection{Model Ontology}
 

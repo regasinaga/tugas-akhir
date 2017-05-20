@@ -1,6 +1,11 @@
 \select@language {bahasa}
 \contentsline {chapter}{Abstrak}{i}
-\contentsline {chapter}{Daftar Isi}{ii}
+\contentsline {chapter}{Abstract}{ii}
+\contentsline {chapter}{Lembar Persembahan}{iii}
+\contentsline {chapter}{Kata Pengantar}{iv}
+\contentsline {chapter}{Daftar Isi}{v}
+\contentsline {chapter}{Daftar Gambar}{vii}
+\contentsline {chapter}{Daftar Tabel}{viii}
 \contentsline {chapter}{\numberline {I}Pendahuluan}{1}
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}
 \contentsline {section}{\numberline {1.2}Perumusan Masalah}{2}
@@ -9,16 +14,17 @@
 \contentsline {section}{\numberline {1.5}Rencana Kegiatan}{3}
 \contentsline {section}{\numberline {1.6}Jadwal Kegiatan}{3}
 \contentsline {chapter}{\numberline {II}Kajian Pustaka}{4}
-\contentsline {section}{\numberline {2.1}Recommender System}{4}
-\contentsline {section}{\numberline {2.2}Context-aware}{5}
-\contentsline {section}{\numberline {2.3}Semantic Web dan Ontology}{5}
-\contentsline {section}{\numberline {2.4}Android}{6}
-\contentsline {section}{\numberline {2.5}Google Maps API}{7}
-\contentsline {section}{\numberline {2.6}OpenWeatherMap API}{7}
-\contentsline {section}{\numberline {2.7}Node.js}{7}
-\contentsline {section}{\numberline {2.8}Protokol HTTP}{7}
-\contentsline {section}{\numberline {2.9}Javascript Object Notation}{8}
-\contentsline {section}{\numberline {2.10}SPARQL}{8}
+\contentsline {section}{\numberline {2.1}Wisata dan Pariwisata}{4}
+\contentsline {section}{\numberline {2.2}Recommender System}{4}
+\contentsline {section}{\numberline {2.3}Context-aware}{5}
+\contentsline {section}{\numberline {2.4}Semantic Web dan Ontology}{6}
+\contentsline {section}{\numberline {2.5}Android}{7}
+\contentsline {section}{\numberline {2.6}Google Maps API}{7}
+\contentsline {section}{\numberline {2.7}OpenWeatherMap API}{7}
+\contentsline {section}{\numberline {2.8}Jython}{7}
+\contentsline {section}{\numberline {2.9}Protokol HTTP}{7}
+\contentsline {section}{\numberline {2.10}Javascript Object Notation}{8}
+\contentsline {section}{\numberline {2.11}SPARQL}{8}
 \contentsline {chapter}{\numberline {III}Metodologi dan Desain Sistem}{9}
 \contentsline {section}{\numberline {3.1}Desain Sistem}{9}
 \contentsline {subsection}{\numberline {3.1.1}Arsitektur Sistem}{9}

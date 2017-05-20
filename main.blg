@@ -4,58 +4,63 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Cover.aux
 A level-1 auxiliary file: Lembar-Persetujuan.aux
 A level-1 auxiliary file: Abstrak-Indo.aux
+A level-1 auxiliary file: Abstract-En.aux
+A level-1 auxiliary file: Lembar-Persembahan.aux
+A level-1 auxiliary file: Kata-Pengantar.aux
 A level-1 auxiliary file: Pendahuluan.aux
 A level-1 auxiliary file: Kajian-Pustaka.aux
 A level-1 auxiliary file: Metodologi.aux
+A level-1 auxiliary file: Hasil-dan-Pembahasan.aux
+A level-1 auxiliary file: Kesimpulan.aux
 The style file: acm.bst
 A level-1 auxiliary file: Lampiran.aux
 Database file #1: References.bib.bib
 Warning--entry type for "bps1" isn't style-file defined
---line 24 of file References.bib.bib
+--line 30 of file References.bib.bib
 Warning--entry type for "bps2" isn't style-file defined
---line 32 of file References.bib.bib
+--line 38 of file References.bib.bib
 Warning--entry type for "androidmarket" isn't style-file defined
---line 62 of file References.bib.bib
+--line 68 of file References.bib.bib
 Warning--empty journal in jones1998methodologies
-You've used 12 entries,
+You've used 13 entries,
             2253 wiz_defined-function locations,
-            607 strings with 6816 characters,
-and the built_in function-call counts, 4658 in all, are:
-= -- 441
-> -- 264
+            616 strings with 7118 characters,
+and the built_in function-call counts, 4870 in all, are:
+= -- 460
+> -- 271
 < -- 0
-+ -- 110
-- -- 96
-* -- 362
-:= -- 758
-add.period$ -- 38
-call.type$ -- 12
-change.case$ -- 83
++ -- 113
+- -- 98
+* -- 370
+:= -- 792
+add.period$ -- 41
+call.type$ -- 13
+change.case$ -- 87
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 153
-empty$ -- 342
-format.name$ -- 96
-if$ -- 959
+cite$ -- 14
+duplicate$ -- 161
+empty$ -- 365
+format.name$ -- 98
+if$ -- 1005
 int.to.chr$ -- 0
-int.to.str$ -- 12
+int.to.str$ -- 13
 missing$ -- 10
-newline$ -- 65
-num.names$ -- 24
-pop$ -- 101
+newline$ -- 70
+num.names$ -- 26
+pop$ -- 110
 preamble$ -- 1
-purify$ -- 72
+purify$ -- 75
 quote$ -- 0
-skip$ -- 105
+skip$ -- 112
 stack$ -- 0
-substring$ -- 264
-swap$ -- 47
+substring$ -- 269
+swap$ -- 49
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 46
+type$ -- 50
 warning$ -- 1
-while$ -- 41
-width$ -- 14
-write$ -- 128
+while$ -- 43
+width$ -- 15
+write$ -- 138
 (There were 4 warnings)

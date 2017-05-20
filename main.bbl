@@ -54,6 +54,13 @@
 {\sc Jones, D., Bench-Capon, T., and Visser, P.}
 \newblock Methodologies for ontology development.
 
+\bibitem{uupariwisata}
+{\sc {Kementerian Pariwisata Republik Indonesia}}.
+\newblock Undang-undang ri no 10 tahun 2009 tentang kepariwisataan, 2009.
+\newblock \newline\url{
+  http://www.kemenpar.go.id/userfiles/file/4636_1364-UUTentangKepariwisataannet1.pdf
+  }.
+
 \bibitem{moreno2013sigtur}
 {\sc Moreno, A., Valls, A., Isern, D., Marin, L., and Borr{\`a}s, J.}
 \newblock Sigtur/e-destination: ontology-based personalized recommendation of

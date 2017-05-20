@@ -1,5 +1,11 @@
 \chapter{Kajian Pustaka}
 
+\section{Wisata dan Pariwisata}
+Wisata adalah kegiatan perjalanan yang dilakukan oleh seseorang atau sekelompok orang dengan mengunjungi tempat tertentu untuk tujuan rekreasi, pengembangan pribadi, atau mempelajari
+keunikan daya tarik wisata yang dikunjungi dalam jangka waktu sementara.
+
+Pariwisata adalah berbagai macam kegiatan wisata dab didukung berbagai fasilitas serta layanan yang disediakan oleh masyarakat, pengusaha, pemerintah dan Pemerintah Daerah\cite{uupariwisata}.
+
 \section{Recommender System}
 
 \textit{Recommender system} (RS) adalah kakas dan teknik yang digunakan untuk mendapatkan sebuah saran atau rekomendasi item yang dapat digunakan oleh pengguna \cite{ricci2011book}. Rekomendasi item merupakan sebuah keluaran dari proses pembuatan keputusan. Item dapat berupa barang apa yang sebaiknya untuk dibeli, musik apa yang cocok dengan selera pengguna, dan masih banyak lagi.
@@ -53,23 +59,19 @@ Google Maps API dipilih karena kemudahan integrasi API pada pengembangan aplikas
 OpenWeatherMap adalah sebuah API yang menyediakan layanan untuk mendapatkan data cuaca terkini. OpenWeatherMap API memiliki dukungan untuk berbagai macam \textit{platform} seperti Android dan iOS.
 \par
 Pada tugas akhir ini, OpenWeatherMap akan digunakan untuk mendapatkan data cuaca terkini di lokasi pengguna.
-% \section{Java}
-% Java adalah bahasa pemrograman komputer yang memiliki kegunaan umum dan berorientasi objek. Salah satu keunggulan Java adalah \textit{"write once, run anywhere"}, yaitu aplikasi yang dikembangkan dengan bahasa ini dapat berjalan pada \textit{platform} apapun tanpa melakukan kompilasi kode ulang.
 
-% Pada tugas akhir ini, Java akan digunakan untuk pengembangan \textit{front-end} dan \textit{back-end}. Java digunakan untuk pengembangan \textit{front-end} karena Java memang merupakan bahasa pemrograman yang direkomendasikan untuk membuat aplikasi Android. sedangkan untuk \textit{back-end}, Java digunakan untuk menangani permintaan HTTP dan mengolah data \textit{ontology}. Java dipilih untuk menangani \textit{back-end} juga karena \textit{Application Program Interface}(API) OWL hanya tersedia untuk Java.
+\section{Jython}
+Jython merupakan bahasa pemrograman Python yang terintegrasi dengan Java. Berbeda dengan Python biasa yang berjalan dengan \textit{C compiler}, Jython berjalan dengan menggunakan
+Java Virtual Machine (JVM). 
 
-\section{Node.js}
-Node.js adalah lingkungan \textit{runtime} untuk Javascript dalam pengembangan berbagai macam kakas dan aplikasi untuk \textit{web}. Node.js menggunakan penerjemah V8 milik Google untuk menerjemahkan kode Javascript.
-\par
-Node.js memiliki keunggulan yaitu bersifat \textit{scalable}, karena Node.js beroperasi dengan menggunakan satu \textit{thread} dan bersifat \textit{non-blocking IO} sehingga aplikasi \textit{web server} yang dibangun dengan Node.js dapat menangani ribuan koneksi bersamaan (\textit{concurrent connection}) tanpa adanya \textit{cost} untuk mengganti \textit{thread} yang aktif.  
 \section{Protokol HTTP}
-Hypertext Transfer Protocol (\textit{HTTP}) adalah protokol aplikasi yang menjadi dasar komunikasi data pada \textit{World Wide Web}. \textit{Hypertext} adalah teks dengan struktur tertentu yang dikirim diantara \textit{node}. HTTP menjadi protokol agar bisa mengirim \textit{Hypertext}.
+\textit{Hypertext Transfer Protocol} (HTTP) adalah protokol aplikasi yang menjadi dasar komunikasi data pada \textit{World Wide Web}. \textit{Hypertext} adalah teks dengan struktur tertentu yang dikirim diantara \textit{node}. HTTP menjadi protokol agar bisa mengirim \textit{Hypertext}.
 \par
 HTTP berfungsi untuk memfasilitasi permintaan dan respon data pada model \textit{client-server}. Pada contoh dunia nyata, \textit{web browser} berperan sebagai \textit{client} dengan mengirimkan pesan permintaan HTTP ke \textit{server} yang berperan untuk \textit{hosting}. \textit{Server} akan menyediakan sumber daya yang disebutkan berdasar permintaan HTTP yang diterima dan mengirim respon HTTP kepada \textit{client}.
 \par
 HTTP memiliki beberapa metode permintaan seperti \textit{GET}, \textit{POST}, \textit{DELETE}, \textit{CONNECT} dan \textit{TRACE}. Metode permintaan yang paling sering digunakan adalah \textit{GET} dan \textit{POST}. Pesan yang dikirim dalam permintaan berisi baris permintaan, \textit{header} dan badan pesan (opsional). Sedangkan respon yang dikirim dengan HTTP berupa kode status permintaan, \textit{header}, dan badan pesan.
 \par
-Tugas akhir ini menggunakan HTTP sebagai perantara pertukaran pesan antara ponsel pengguna dengan Google Maps API serta ponsel pengguna dengan proses Node.js pada \textit{server}. HTTP dipilih karena HTTP dapat mengirim pesan dalam berbagai tipe konten seperti teks biasa, html, atau \textit{Javascript Object Notation}(JSON).   
+Tugas akhir ini menggunakan HTTP sebagai perantara pertukaran pesan antara ponsel pengguna dengan proses yang berjalan pada \textit{server}. HTTP dipilih karena HTTP dapat mengirim pesan dalam berbagai tipe konten seperti teks biasa, html, atau Javascript Object Notation (JSON).   
 
 \section{Javascript Object Notation}
 \textit{Javascript Object Notation} atau yang biasa disebut JSON adalah sebuah format pertukaran data. JSON memiliki kelebihan dapat dipahami manusia dengan mudah dan kemudahan \textit{parsing} oleh mesin. 
