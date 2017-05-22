@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.19)  21 MAY 2017 03:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.19)  21 MAY 2017 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,6 +918,9 @@ LaTeX Warning: Label `fig:Gambar' multiply defined.
 
 LaTeX Warning: Label `fig:Gambar' multiply defined.
 
+
+LaTeX Warning: Label `fig:Gambar' multiply defined.
+
 ) (./Hasil-dan-Pembahasan.aux) (./Kesimpulan.aux) (./Lampiran.aux))
 \openout1 = `main.aux'.
 
@@ -1110,48 +1113,63 @@ Bab II.
 
 
 
-] [5] [6] [7]) [8]
+] [5] [6] <img/methontology_cycle.png, id=63, 602.25pt x 360.34625pt>
+File: img/methontology_cycle.png Graphic file (type png)
+
+<use img/methontology_cycle.png>
+Package pdftex.def Info: img/methontology_cycle.png used on input line 63.
+(pdftex.def)             Requested size: 301.12425pt x 180.17268pt.
+ [7 <./img/methontology_cycle.png>] [8])
+[9]
 \openout2 = `Metodologi.aux'.
 
  (./Metodologi.tex
 Bab III.
-<img/arsitektur_sistem.png, id=69, 532.99126pt x 251.94125pt>
+
+Overfull \hbox (10.5593pt too wide) in paragraph at lines 16--29
+ [] 
+ []
+
+[10
+
+
+
+] <img/arsitektur_sistem.png, id=78, 532.99126pt x 251.94125pt>
 File: img/arsitektur_sistem.png Graphic file (type png)
 
 <use img/arsitektur_sistem.png>
-Package pdftex.def Info: img/arsitektur_sistem.png used on input line 12.
-(pdftex.def)             Requested size: 266.49498pt x 125.9703pt.
+Package pdftex.def Info: img/arsitektur_sistem.png used on input line 51.
+(pdftex.def)             Requested size: 159.8986pt x 75.58295pt.
 
-<img/ontology.png, id=70, 737.75626pt x 565.11125pt>
+<img/ontology.png, id=79, 737.75626pt x 565.11125pt>
 File: img/ontology.png Graphic file (type png)
  <use img/ontology.png>
-Package pdftex.def Info: img/ontology.png used on input line 27.
+Package pdftex.def Info: img/ontology.png used on input line 67.
 (pdftex.def)             Requested size: 442.65717pt x 339.06937pt.
 
-Overfull \hbox (44.31857pt too wide) in paragraph at lines 27--28
- [][] 
- []
-
-[9
-
-
-
- <./img/arsitektur_sistem.png>]
-<img/flowchart-general.png, id=76, 665.48625pt x 689.57625pt>
-File: img/flowchart-general.png Graphic file (type png)
-
-<use img/flowchart-general.png>
-Package pdftex.def Info: img/flowchart-general.png used on input line 38.
-(pdftex.def)             Requested size: 399.29483pt x 413.74893pt.
-
-Overfull \hbox (0.95624pt too wide) in paragraph at lines 38--39
+Overfull \hbox (44.31857pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./img/ontology.png>] [11 <./img/flowchart-general.png>] [12]) [13]
+<img/flowchart-general.png, id=80, 665.48625pt x 689.57625pt>
+File: img/flowchart-general.png Graphic file (type png)
+
+<use img/flowchart-general.png>
+Package pdftex.def Info: img/flowchart-general.png used on input line 78.
+(pdftex.def)             Requested size: 399.29483pt x 413.74893pt.
+
+Overfull \hbox (0.95624pt too wide) in paragraph at lines 78--79
+ [][] 
+ []
+
+[11 <./img/arsitektur_sistem.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./img/ontology.png>] [13 <./img/flowchart-general.png>] [14]) [15]
 \openout2 = `Hasil-dan-Pembahasan.aux'.
 
 
@@ -1169,13 +1187,7 @@ Underfull \hbox (badness 1609) in paragraph at lines 24--30
 a-dap ko-mo-di-tas eks-por la-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--63
-\OT1/cmtt/m/n/12 http : / / www . kemenpar . go . id / userfiles / file / 4636 
-_
- []
-
-[14
+[16
 
 
 
@@ -1184,15 +1196,21 @@ _
 
 
 ]
-Overfull \hbox (42.12799pt too wide) in paragraph at lines 77--84
+Underfull \hbox (badness 10000) in paragraph at lines 62--67
+\OT1/cmtt/m/n/12 http : / / www . kemenpar . go . id / userfiles / file / 4636 
+_
+ []
+
+
+Overfull \hbox (42.12799pt too wide) in paragraph at lines 89--96
 \OT1/cmtt/m/n/12 android-[]goog-[]just-[]hit-[]a-[]record-[]88-[]market-[]share
 -[]of-[]all-[]smartphones/$\OT1/cmr/m/n/12 ,
  []
 
-) [15]
+) [17]
 \openout2 = `Lampiran.aux'.
 
- (./Lampiran.tex) [16
+ (./Lampiran.tex) [18
 
 
 
@@ -1210,23 +1228,23 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16207 strings out of 493014
- 305613 string characters out of 6137000
- 373782 words of memory out of 5000000
- 19303 multiletter control sequences out of 15000+600000
+ 16216 strings out of 493014
+ 305820 string characters out of 6137000
+ 373806 words of memory out of 5000000
+ 19311 multiletter control sequences out of 15000+600000
  11944 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,56p,1280b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,56p,1280b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (26 pages, 259712 bytes).
+Output written on main.pdf (28 pages, 323542 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

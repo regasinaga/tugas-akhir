@@ -16,51 +16,52 @@ The style file: acm.bst
 A level-1 auxiliary file: Lampiran.aux
 Database file #1: References.bib.bib
 Warning--entry type for "bps1" isn't style-file defined
---line 30 of file References.bib.bib
+--line 36 of file References.bib.bib
 Warning--entry type for "bps2" isn't style-file defined
---line 38 of file References.bib.bib
+--line 44 of file References.bib.bib
 Warning--entry type for "androidmarket" isn't style-file defined
---line 68 of file References.bib.bib
+--line 74 of file References.bib.bib
+Warning--empty journal in fernandez1997methontology
 Warning--empty journal in jones1998methodologies
-You've used 13 entries,
+You've used 15 entries,
             2253 wiz_defined-function locations,
-            616 strings with 7118 characters,
-and the built_in function-call counts, 4870 in all, are:
-= -- 460
-> -- 271
+            627 strings with 7627 characters,
+and the built_in function-call counts, 5480 in all, are:
+= -- 518
+> -- 310
 < -- 0
-+ -- 113
-- -- 98
-* -- 370
-:= -- 792
-add.period$ -- 41
-call.type$ -- 13
-change.case$ -- 87
++ -- 129
+- -- 112
+* -- 421
+:= -- 900
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 100
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 161
-empty$ -- 365
-format.name$ -- 98
-if$ -- 1005
+cite$ -- 17
+duplicate$ -- 178
+empty$ -- 403
+format.name$ -- 112
+if$ -- 1122
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 10
-newline$ -- 70
-num.names$ -- 26
-pop$ -- 110
+int.to.str$ -- 15
+missing$ -- 12
+newline$ -- 79
+num.names$ -- 30
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 75
+purify$ -- 86
 quote$ -- 0
-skip$ -- 112
+skip$ -- 122
 stack$ -- 0
-substring$ -- 269
-swap$ -- 49
+substring$ -- 298
+swap$ -- 52
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 50
-warning$ -- 1
-while$ -- 43
-width$ -- 15
-write$ -- 138
-(There were 4 warnings)
+type$ -- 58
+warning$ -- 2
+while$ -- 49
+width$ -- 17
+write$ -- 155
+(There were 5 warnings)

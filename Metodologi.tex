@@ -1,5 +1,44 @@
 \chapter{Metodologi dan Desain Sistem}
 
+\section{Pengembangan Ontology}
+Dari sepuluh tahap \textit{Methontology}, terdapat tiga tahap utama yang menghasilkan keluaran formal 
+yaitu \textit{specification}, \textit{conceptualization} dan \textit{implementation}.
+\par
+
+\subsection{Specification}
+Dalam tahap \textit{specification} pengembangan \textit{ontology}, terdapat tiga hal utama yang yang harus dideskripsikan yaitu domain, tujuan dan lingkup \textit{ontology}
+yang dikembangkan.
+\par
+Tahap ini akan menghasilkan dokumen spesifikasi kebutuhan \textit{ontology} pada domain pariwisata. Tabel 3.1 adalah spesifikasi dari \textit{ontology} yang akan dibangun.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |c|m{12cm}| } 
+\hline
+	Domain & Pariwisata \\
+	\hline
+	Tujuan & Ontology untuk merepresentasikan pengetahuan klasifikasi tujuan wisata dan aktivitas yang dapat dilakukan\\
+	\hline
+	Lingkup & Daftar kategori tujuan wisata, daftar tingkat kedekatan suatu tujuan wisata dengan kategori tujuan wisata, daftar kategori cuaca, daftar tujuan wisata,
+	daftar atribut tujuan wisata. \\ 
+	\hline
+	Sumber & Wawancara dengan pakar. \newline 
+	buku \textit{Tourism Planning, An Integrated and Sustainable Development Approach} karya Edward Inskeep. \\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel spesifikasi kebutuhan ontology yang akan dibangun}
+\label{table2}
+\end{table}
+
+Domain dari \textit{ontology} yang dibuat berada di pariwisata, meliputi tujuan wisata dan kategorinya. Untuk bisa mengetahui bagaimana tujuan wisata dikategorikan,
+maka perlu adanya konsultasi dengan pakar terkait dan studi pustaka pada buku rujukan yang direkomendasikan oleh pakar.
+
+\subsection{Conceptualization}
+Ketika tahap \textit{specification} telah selesai, maka akan didapat pengetahuan mengenai domain yang masih belum terstruktur dengan baik. Pada tahap {Conceptualization}, pengetahuan
+yang tidak terstruktur tersebut akan diatur dengan representasi yang tidak bergantung pada bahasa pemrograman dan lingkungan \textit{runtime}\cite{lopez1999building}. 
+\subsection{Implementation}
+
 \section{Desain Sistem}
 Sebelum masuk pada fase pengembangan sistem, menentukan desain kasar sistem merupakan hal yang krusial. Hal tersebut disebabkan karena memahami komponen apa saja yang ada pada sistem dan relasi antar komponen dapat membantu menentukan arah pengembangan sistem. 
  
@@ -9,10 +48,11 @@ Gambar 3.1 menjelaskan desain arsitektur sistem dan relasi-relasi antar komponen
 \newline
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.5]{img/arsitektur_sistem.png}
+    \includegraphics[scale=0.3]{img/arsitektur_sistem.png}
     \caption{Gambaran komponen-komponen sistem dan relasinya}
     \label{fig:Gambar}
 \end{figure}
+
 \par
 Komponen-komponen RS yang akan dikembangkan penyusun terdiri dari \textit{client}, \textit{server}, basis data dengan fail OWL, Google Maps API dam OpenWeatherMap API. 
 \textit{Client} berkomunikasi dengan Google Maps API untuk menampilkan data lokasi pengguna dan tujuan wisata. Selanjutnya \textit{client} mengirimkan \textit{HTTP request} ke 
