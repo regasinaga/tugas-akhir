@@ -27,13 +27,17 @@
 \contentsline {section}{\numberline {2.11}SPARQL}{9}
 \contentsline {chapter}{\numberline {III}Metodologi dan Desain Sistem}{10}
 \contentsline {section}{\numberline {3.1}Pengembangan Ontology}{10}
-\contentsline {subsection}{\numberline {3.1.1}Specification}{10}
-\contentsline {subsection}{\numberline {3.1.2}Conceptualization}{11}
-\contentsline {subsection}{\numberline {3.1.3}Implementation}{11}
-\contentsline {section}{\numberline {3.2}Desain Sistem}{11}
-\contentsline {subsection}{\numberline {3.2.1}Arsitektur Sistem}{11}
-\contentsline {subsection}{\numberline {3.2.2}Model Ontology}{11}
-\contentsline {subsection}{\numberline {3.2.3}Flowchart Sistem}{12}
-\contentsline {section}{\numberline {3.3}Metodologi Pengembangan Sistem}{12}
-\contentsline {chapter}{Daftar Pustaka}{16}
-\contentsline {chapter}{Lampiran}{18}
+\contentsline {subsection}{\numberline {3.1.1}\textit {Specification}}{10}
+\contentsline {subsection}{\numberline {3.1.2}\textit {Conceptualization}}{11}
+\contentsline {subsection}{\numberline {3.1.3}\textit {Knowledge Acquisition}}{19}
+\contentsline {subsection}{\numberline {3.1.4}\textit {Implementation}}{19}
+\contentsline {section}{\numberline {3.2}Metodologi Pengembangan Sistem}{19}
+\contentsline {section}{\numberline {3.3}Model Rekomendasi Daya Tarik Wisata}{20}
+\contentsline {subsection}{\numberline {3.3.1}Mendapatkan Masukan Preferensi Pengguna}{20}
+\contentsline {subsection}{\numberline {3.3.2}Menyaring Daya tarik Wisata Berdasarkan Masukan}{22}
+\contentsline {section}{\numberline {3.4}Desain Sistem}{24}
+\contentsline {subsection}{\numberline {3.4.1}Arsitektur Sistem}{24}
+\contentsline {subsection}{\numberline {3.4.2}Flowchart Sistem}{24}
+\contentsline {section}{\numberline {3.5}Contoh Penghitungan}{26}
+\contentsline {chapter}{Daftar Pustaka}{27}
+\contentsline {chapter}{Lampiran}{29}

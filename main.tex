@@ -22,6 +22,14 @@
 \marginsize{4cm}{3cm}{3cm}{3cm} %{left}{right}{top}{bottom}
 \usepackage[compact]{titlesec} 
 \usepackage{etoolbox}
+\usepackage{longtable}
+\usepackage{verbatim}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 
 \makeatletter
 \patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
@@ -149,3 +157,4 @@
 \addcontentsline{toc}{chapter}{Lampiran}
 \include{Lampiran}
 \end{document}
+	

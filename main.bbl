@@ -47,6 +47,12 @@
 {\sc Fern{\'a}ndez-L{\'o}pez, M., G{\'o}mez-P{\'e}rez, A., and Juristo, N.}
 \newblock Methontology: from ontological art towards ontological engineering.
 
+\bibitem{inskeep1991tourism}
+{\sc Inskeep, E., et~al.}
+\newblock {\em Tourism planning: an integrated and sustainable development
+  approach.}
+\newblock Van Nostrand Reinhold, 1991.
+
 \bibitem{jakkhupan2015}
 {\sc Jakkhupan, W., Rattanothai, S., and Kaewonjing, J.}
 \newblock A context-aware personalized venue recommender system on smart
@@ -64,14 +70,6 @@
 \newblock \newline\url{
   http://www.kemenpar.go.id/userfiles/file/4636_1364-UUTentangKepariwisataannet1.pdf
   }.
-
-\bibitem{lopez1999building}
-{\sc L{\'o}pez, M.~F., G{\'o}mez-P{\'e}rez, A., Sierra, J.~P., and Sierra,
-  A.~P.}
-\newblock Building a chemical ontology using methontology and the ontology
-  design environment.
-\newblock {\em IEEE Intelligent Systems and their applications 14}, 1 (1999),
-  37--46.
 
 \bibitem{moreno2013sigtur}
 {\sc Moreno, A., Valls, A., Isern, D., Marin, L., and Borr{\`a}s, J.}

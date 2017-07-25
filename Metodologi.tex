@@ -5,15 +5,15 @@ Dari sepuluh tahap \textit{Methontology}, terdapat tiga tahap utama yang menghas
 yaitu \textit{specification}, \textit{conceptualization} dan \textit{implementation}.
 \par
 
-\subsection{Specification}
+\subsection{\textit{Specification}}
 Dalam tahap \textit{specification} pengembangan \textit{ontology}, terdapat tiga hal utama yang yang harus dideskripsikan yaitu domain, tujuan dan lingkup \textit{ontology}
 yang dikembangkan.
 \par
-Tahap ini akan menghasilkan dokumen spesifikasi kebutuhan \textit{ontology} pada domain pariwisata. Tabel 3.1 adalah spesifikasi dari \textit{ontology} yang akan dibangun.
+Tahap ini akan menghasilkan dokumen spesifikasi kebutuhan \textit{ontology} pada domain pariwisata. Tabel \ref{table:ont-spec} adalah spesifikasi dari \textit{ontology} yang akan dibangun.
 
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{ |c|m{12cm}| } 
+\begin{tabular}{ |l|m{12cm}| } 
 \hline
 	Domain & Pariwisata \\
 	\hline
@@ -28,114 +28,392 @@ Tahap ini akan menghasilkan dokumen spesifikasi kebutuhan \textit{ontology} pada
 \end{tabular}
 \end{center}
 \caption{Tabel spesifikasi kebutuhan ontology yang akan dibangun}
-\label{table2}
+\label{table:ont-spec}
 \end{table}
 
-Domain dari \textit{ontology} yang dibuat berada di pariwisata, meliputi tujuan wisata dan kategorinya. Untuk bisa mengetahui bagaimana tujuan wisata dikategorikan,
+Domain dari \textit{ontology} yang akan dikembangkan berada di domain pariwisata, meliputi daya tarik wisata wisata dan kategorinya. Untuk bisa mengetahui bagaimana daya tarik wisata dikategorikan,
 maka perlu adanya konsultasi dengan pakar terkait dan studi pustaka pada buku rujukan yang direkomendasikan oleh pakar.
 
-\subsection{Conceptualization}
-Ketika tahap \textit{specification} telah selesai, maka akan didapat pengetahuan mengenai domain yang masih belum terstruktur dengan baik. Pada tahap {Conceptualization}, pengetahuan
-yang tidak terstruktur tersebut akan diatur dengan representasi yang tidak bergantung pada bahasa pemrograman dan lingkungan \textit{runtime}\cite{lopez1999building}. 
-\subsection{Implementation}
+\subsection{\textit{Conceptualization}}
+Ketika tahap \textit{specification} telah selesai, maka akan didapat spesifikasi komponen \textit{ontology} (kelas,textit{instance}, atribut, relasi) apa saja yang harus tersedia dan bagaimana
+teknik mengakuisisi pengetahuan terhadap komponen tersebut. Pada tahap \textit{conceptualization}, teknik-teknik untuk mengakuisisi pengetahuan diaplikasikan
+untuk mendapatkan istilah-istilah pada domain kategori pariwisata. Tabel \ref{table:concept-table} adalah tabel istilah preferensi kategori pariwisata.
 
-\section{Desain Sistem}
-Sebelum masuk pada fase pengembangan sistem, menentukan desain kasar sistem merupakan hal yang krusial. Hal tersebut disebabkan karena memahami komponen apa saja yang ada pada sistem dan relasi antar komponen dapat membantu menentukan arah pengembangan sistem. 
+\begin{center}
+\begin{longtable}{ |l|m{10cm}| } 
+\hline
+	\textbf{Istilah} & \textbf{Keterangan} \\
+	
+	\hline
+	Daya tarik & Sebuah tempat yang dikunjungi oleh seseorang dengan harapan kebutuhannya yang terkait dengan mengisi waktu luang akan terpenuhi
+	\cite{inskeep1991tourism}. Klasifikasi secara umum membagi daya tarik menjadi tiga yaitu alam, budaya dan buatan.\\
+	\hline
+	Aksesibilitas & Sarana dan infrastruktur penunjang suatu aspek pada daya tarik / daya tarik wisata, contohnya jalan dan listrik.\\
+	\hline
+	Daya tarik alam & Daya tarik wisata yang ada karena terbentuk secara alami.\\ 
+	\hline
+	Daya tarik budaya & Daya tarik wisata yang ada karena aktivitas dan kebiasaan manusia.\\
+	\hline
+	Daya tarik buatan & Daya tarik wisata yang ada karena dibangun oleh manusia.\\
+	\hline
+	Petualangan alam & Subkelas dari daya tarik alam. Fenomena alam yang tidak biasa seperti geyser, gua, pemandian air panas, aktivitas gunung
+	merapi merupakan daya tarik wisata yang penting untuk wisatawan yang ingin melihat-lihat atau melakukan aktivitas khusus seperti
+	mendaki dan menjelajah gua. Pada kateogori ini terdapat subkategori \textbf{pemandian air panas}, \textbf{eksplorasi}, 
+	\textbf{pemandangan alam} dan \textbf{pendakian}.\\
+	\hline
+	Flora dan fauna & Subkelas dari daya tarik alam. Konservasi hewan dan tumbuhan yang berada di habitatnya merupakan daya tarik wisata yang
+	sangat menarik. Pada kategori ini terdapat subkategori \textbf{konservasi} dan \textbf{safari}.\\
+	\hline
+	Keindahan alam & Subkelas dari daya tarik alam. Merupakan motivasi utama dalam mengunjungi daya tarik alam. Pada kategori ini terdapat sub 
+	kategori \textbf{\textit{camping}}, \textbf{\textit{hiking}}, \textbf{\textit{outbound}} dan \textbf{pemandangan alam}.\\
+	\hline
+	Pesisir dan perairan & Subkelas dari daya tarik alam. Sungai, danau dan area laut dapat menjadi daya tarik wisata untuk berbagai
+	macam aktivitas dari mulai rekreasi hingga olahraga yang menantang seperti \textit{diving} dan \textit{rafting}. Pada kategori ini
+	terdapat subkategori \textbf{olahraga akuatik}, \textbf{relaksasi akuatik} dan \textbf{pemandangan alam}.\\
+	\hline
+	Hiburan & Subkelas dari daya tarik buatan. Kategori hiburan diasosiasikan dengan seni pertunjukan kontemporer dan musik. Klub malam,
+	karaoke dan kafe yang menyajikan musik masuk dalam kategori ini. Pada kategori ini terdapat subkategori 
+	\textbf{hiburan malam}, dan \textbf{seni pertunjukan}. \\
+	\hline
+	Event & Subkelas dari daya tarik buatan. Bangunan konferensi yang dapat digunakan untuk mengadakan acara besar seperti konser dan \textit{event}
+	merupakan daya tarik wisata yang semakin populer di seluruh dunia. Pada kategori ini terdapat subkategori \textbf{konferensi} dan \textbf{stadion}.\\
+	\hline
+	Kuliner & Subkelas dari daya tarik buatan. Pada kategori ini terdapat subkategori \textbf{kuliner umum} dan \textbf{kuliner khas}.\\
+	\hline
+	Olahraga & Subkelas dari daya tarik buatan.Fasilitas rekreasi dan olahraga dapat menjadi daya tarik wisata primer maupun sekunder untuk
+	turis, seperti \textit{golf course}, lapangan tenis, gelanggang olahraga dan lain-lain.
+	Pada kategori ini terdapat subkategori \textbf{olahraga akuatik}, \textbf{olahraga nonakuatik} dan \textbf{rekreasi}.\\
+	\hline
+	Pusat belanja & Subkelas dari daya tarik buatan. Belanja adalah suatu aktivitas dan jenis pengeluaran pariwisata sehingga harus dianggap sebagai daya tarik wisata.
+	Pada kategori ini terdapat subkategori \textbf{mall}, dan \textbf{pasar modern}.\\
+	\hline
+	Taman hiburan & Subkelas dari daya tarik buatan. \textit{Theme park} adalah jenis taman hiburan yang memiliki suatu corak tema tertentu, seperti
+	hewan, petualangan, fantasi dan menyajikan acara, wahana, dan pengalaman dalam suatu lingkungan terkendali \cite{inskeep1991tourism}.
+	\textit{Theme park} cukup sulit dibedakan dari \textit{amusement park} kecuali dari ada atau tidaknya tema tertentu yang digunakan. Namun
+	kedunya tetap masih bisa disebut sebagai taman hiburan.
+	Pada kategori ini terdapat subkategori \textbf{taman hiburan}.\\
+	\hline
+	Kegiatan ekonomi & Subkelas dari daya tarik budaya. Kegiatan ekonomi yang dilakukan penduduk lokal dapat menjadi daya tarik wisata tersendiri seperti perkebunan teh, 
+	pasar terapung diatar sungai Barito dan sebagainya.
+	Pada kategori ini terdapat subkategori \textbf{agrikultur} dan \textbf{pasar tradisional}.\\
+	\hline
+	Fasilitas budaya & Subkelas dari daya tarik budaya. Berbagai fasilitas yang dibangun dengan tujuan menunjukkan ciri khusus budaya suatu daerah,
+	contohnya seperti museum, pusat pembelajaran budaya, galeri seni, termasuk dalam kategori ini.
+	Pada kategori ini terdapat subkategori \textbf{wisata edukasi}, \textbf{museum sejarah} dan \textbf{museum budaya}.\\
+	\hline
+	Seni & Subkelas dari daya tarik budaya. Pertunjukan seni dengan tarian, musik, drama dan pameran lukisan dapat menjadi daya tarik wisata yang
+	penting jika bisa disajikan dengan efektif \cite{inskeep1991tourism}. Selain pertunjukan seni, daerah tertentu yang memiliki nuansa budaya
+	daerah pada arsitektur bangunan dan kerajinan tangan yang diproduksi juga termasuk dalam kategori ini.
+	Pada kategori ini terdapat subkategori \textbf{kerajinan}, \textbf{kesenian daerah} dan \textbf{suvenir}.\\
+	\hline
+	Situs & Subkelas dari daya tarik budaya. Peninggalan-peninggalan budaya dan sejarah seperti bangunan, tempat ibadah, monumen, 
+	dan lokasi peristiwa sejarah merupakan daya tarik wisata yang memiliki nilai sejarah dan budaya. Situs yang memiliki nilai arkeologis juga termasuk
+	dalam kategori ini.
+	Pada kategori ini terdapat subkategori \textbf{religi}, \textbf{situs budaya}, dan \textbf{situs sejarah}.\\
+	\hline
+	Urban & Subkelas dari daya tarik budaya. Area urban dengan arsitektur bangunan, sudut kota, pusat publik, fasilitas belanja dan aktivitas di suatu jalan
+	yang beragam dapat menciptakan daya tarik wisata tersendiri. Segala hal menarik di bagian area urban yang dapat menimbulkan rasa tertarik
+	masuk ke dalam kategori ini. Pada kategori ini terdapat subkategori \textbf{kuliner khas}, \textbf{seni pertunjukan}, \textbf{rute kota},
+	dan \textbf{taman kota}.\\
+	\hline
+	Lokasi & Informasi lokasi pada umumnya menggunakan alamat, namun untuk kemudahan proses komputasi, lokasi lebih mudah direpresentasikan
+	dengan \textit{\textbf{latitude}} dan \textit{\textbf{longitude}} berdasarkan koordinat Google Maps.\\
+	\hline
+	Waktu buka & Setiap destinasi wisata memiliki waktu bukanya tersendiri. Waktu buka bisa berbeda setiap harinya. \\ 
+	\hline
+	Infrastruktur & Cuaca disekitar destinasi wisata harus diperhitungkan agar daya tarik wisata dapat dinikmati secara penuh. Infrastruktur
+	daya tarik wisata dapat mendukung agar daya tarik wisata dapat dikunjungi hingga kondisi cuaca tertentu. Kondisi cuaca pada tugas akhir ini
+	dinyatakan dengan tiga tingkat yaitu \textbf{buruk}, \textbf{kurang baik} dan \textbf{baik}.\\ 
+	\hline
+\caption{istilah dan definisi dalam domain kateogori wisata}
+\label{table:concept-table}
+\end{longtable}
+\end{center}
+
+Setiap daya tarik wisata akan direpresentasikan sebagai satu \textit{instance}. Satu \textit{instance} daya tarik wisata pasti memiliki
+dukungan infrastruktur untuk tingkat cuaca tertentu. Kelas infrastruktur cuaca memiliki akan memiliki tiga \textit{instance} yaitu \textbf{cuaca buruk}, 
+\textbf{cuaca kurang baik} dan \textbf{cuaca baik}.
+\textit{Instance} daya tarik wisata pasti akan memiliki satu properti relasi ke \textit{instance} dari infrastruktur cuaca. Hubungan tersebut
+divisualisasikan pada gambar \ref{fig:reldiagram}.
  
-\subsection{Arsitektur Sistem}
-\par
-Gambar 3.1 menjelaskan desain arsitektur sistem dan relasi-relasi antar komponen.
-\newline
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.3]{img/arsitektur_sistem.png}
-    \caption{Gambaran komponen-komponen sistem dan relasinya}
-    \label{fig:Gambar}
+    \includegraphics[scale=0.7]{img/rel-diagram.png}
+    \caption{diagram relasi daya tarik wisata dengan infrastruktur pendukung cuaca}
+    \label{fig:reldiagram}
 \end{figure}
 
+Spesifikasi relasi \textbf{memiliki dukungan infrastruktur} dapat dilihat pada tabel \ref{table:hasinssupport}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}| } 
+\hline
+	\textbf{Spesifikasi} & \textbf{Nilai}\\
+	\hline
+	Nama relasi & memiliki dukungan infrastruktur\\
+	\hline
+	Ekuivalen & cuaca cocok\\
+	\hline
+	Domain konsep & Daya tarik wisata\\
+	\hline
+	Kardinalitas & (1,1)\\
+	\hline
+	Target konsep & Infrastruktur cuaca\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel spesifikasi relasi memiliki dukungan infrastruktur}
+\label{table:hasinssupport}
+\end{table}
+
+Setiap \textit{instance} dari kelas infrastruktur cuaca harus dapat menjabarkan kondisi cuaca apa saja yang direpresentasikan, misalnya cuaca cerah, berawan dsb.
+Kondisi cuaca dapat direpresentasikan dengan kode cuaca dari OpenWeatherMap. Kode cuaca dapa dilihat di .Berikut adalah tabel detail dari atribut kode cuaca:
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}| } 
+\hline
+	\textbf{Spesifikasi} & \textbf{Keterangan}\\
+	\hline
+	Nama atribut & kode cuaca\\
+	\hline
+	Tipe nilai & integer\\
+	\hline
+	Satuan & --\\
+	\hline
+	Rentang & [500, 1000]\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel spesifikasi atribut kode cuaca}
+\label{table:weatattribute}
+\end{table}
 \par
-Komponen-komponen RS yang akan dikembangkan penyusun terdiri dari \textit{client}, \textit{server}, basis data dengan fail OWL, Google Maps API dam OpenWeatherMap API. 
-\textit{Client} berkomunikasi dengan Google Maps API untuk menampilkan data lokasi pengguna dan tujuan wisata. Selanjutnya \textit{client} mengirimkan \textit{HTTP request} ke 
-\textit{server} dengan menyertakan data lokasi dan preferensi pengguna. Ketika \textit{server} menerima \textit{HTTP request}, \textit{server} akan membalas dengan 
-\textit{HTTP response} yang berisi daftar rekomendasi tujuan wisata.
+Selain kode cuaca, \textit{instance} dari kelas infrastruktur cuaca juga memiliki atribut untuk menyatakan kondisi cuaca menjadi nilai numerik yang dapat digunakan pada proses komputasi.
+Hal ini penting pada proses pemberian nilai \textit{utility} daya tarik wisata. Berikut adalah tabel detail dari atribut nilai cuaca:
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}| } 
+\hline
+	\textbf{Spesifikasi} & \textbf{Keterangan}\\
+	\hline
+	Nama atribut & nilai cuaca\\
+	\hline
+	Tipe nilai & integer\\
+	\hline
+	Satuan & --\\
+	\hline
+	Rentang & [1, 3, 5]\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel spesifikasi atribut kode cuaca}
+\label{table:weatvalattribute}
+\end{table}
+\par
+Sebagai contoh berikut adalah detail dari salah satu \textit{instance} infrastruktur cuaca, yaitu cuaca bagus.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}| } 
+\hline
+	\textbf{Spesifikasi} & \textbf{Keterangan}\\
+	\hline
+	Nama instance & \textbf{cuaca bagus} \\
+	\hline
+	kode cuaca & 801, 802, 803, 804, 952, 953\\
+	\hline
+	nilai cuaca & 5\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Contoh tabel \textit{instance} daya tarik wisata}
+\label{table:instance}
+\end{table}
 
-\subsection{Model Ontology}
 
-Gambar 3.2 adalah garis besar model \textit{ontology} yang merepresentasikan pengetahuan sistem yang akan dibangun:
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.6]{img/ontology.png}
-    \caption{Gambar \textit{ontology} representasi pengetahuan RS}
-    \label{fig:Gambar}
-\end{figure}
-\newline
-Struktur \textit{ontology} dibangun berdasarkan asumsi bahwa tempat wisata yang dapat dikunjungi ketika hujan juga dapat dikunjungi ketika cuaca cerah, tetapi tidak berlaku sebaliknya. Strukturnya juga menyimpan informasi mengenai lokasi dan waktu buka tempat wisata.
+Semua daya tarik wisata pasti memiliki keterangan waktu buka. Setiap hari terdapat perubahan status daya tarik wisata, apakah sedang buka atau sedang tutup.
+Karena setiap hari terdapat dua status tersebut dan ada tujuh hari dalam seminggu, maka paling tidak ada empat belas data waktu perubahan status daya tarik wisata.
+Tabel \ref{table:timeattribute} adalah contoh spesifikasi atribut waktu perubahan status daya tarik wisata.
  
-\subsection{Flowchart Sistem}
-Secara umum, aliran kerja sistem dijelaskan pada gambar 3.3 dibawah ini:
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}| } 
+\hline
+	\textbf{Spesifikasi} & \textbf{Keterangan}\\
+	\hline
+	Nama atribut & Senin buka\\
+	\hline
+	Tipe nilai & float\\
+	\hline
+	Satuan & --\\
+	\hline
+	Rentang & [0, 1]\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel contoh spesifikasi atribut senin buka}
+\label{table:timeattribute}
+\end{table}
+
+Nilai yang disimpan pada atribut waktu perubahan status tidak menggunakan format waktu HH:mm, namun dengan nilai \textit{float} antara 0 hingga 1. Hal itu dilakukan
+untuk kemudahan proses komputasi dalam pemilihan daya tarik wisata yang sedang buka. Untuk mengkonversi data waktu perubahan status dalam
+format HH:mm ke nilai antara nol hingga satu, digunakan persamaan \ref{eq:transform}:
+
+\begin{equation}
+tn = \frac{60H + m}{1440}
+\label{eq:transform} 
+\end{equation}
+
+Dengan $tn$ adalah nilai hasil transformasi ke rentang nol dan satu, $H$ adalah jam dan $m$ adalah menit.
+\par
+Setiap \textit{instance} daya tarik wisata pasti memiliki atribut \textit{latitude} dan \textit{longitude}, berikut adalah spesifikasi
+atribut \textit{latitude} dan \textit{longitude}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}| } 
+\hline
+	\textbf{Spesifikasi} & \textbf{Keterangan}\\
+	\hline
+	Nama atribut & latitude \\
+	\hline
+	Tipe nilai & float\\
+	\hline
+	Satuan & --\\
+	\hline
+	Rentang & [-90, 90]\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel spesifikasi atribut latitude}
+\label{table:latitude}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}| } 
+\hline
+	\textbf{Spesifikasi} & \textbf{Keterangan}\\
+	\hline
+	Nama atribut & longitude \\
+	\hline
+	Tipe nilai & float\\
+	\hline
+	Satuan & --\\
+	\hline
+	Rentang & [-180, 180]\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel spesifikasi atribut longitude}
+\label{table:longitude}
+\end{table}
+
+Spesifikasi relasi dan atribut-atribut yang telah dijabarkan  sebelumnya berfungsi untuk validasi ketika menetapkan nilai-nilai atribut
+dan pembuatan relasi pada suatu \textit{instance} daya tarik wisata. Tabel \ref{table:instance} merupakan contoh detail \textit{instance}
+daya tarik wisata.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}| } 
+\hline
+	\textbf{Spesifikasi} & \textbf{Keterangan}\\
+	\hline
+	Nama instance & \textbf{alam wisata cimahi} \\
+	\hline
+	Latitude & -6.841073f\\
+	\hline
+	Longitude & 107.54805f\\
+	\hline
+	Memiliki dukungan infrastruktur & cuaca kurang baik\\
+	\hline
+	Senin buka & 0.3334f\\
+	\hline
+	Senin tutup & 0.875f\\
+	\hline
+	-- & -- \\
+	\hline
+	Minggu tutup & 0.875f\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Contoh tabel \textit{instance} daya tarik wisata}
+\label{table:instance}
+\end{table}
+
+\par 
+Untuk mendapatkan gambaran jelas dari hubungan antara semantik konsep istilah yang didapatkan, gambar \ref{fig:concept-tree} mmvisualisasikan hubungan tersebut.
+
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.6]{img/flowchart-general.png}
-    \caption{Gambaran aliran kerja sistem yang dikembangkan}
-    \label{fig:Gambar}
+    \includegraphics[scale=0.5]{img/concept-tree.png}
+    \caption{Gambaran \textit{concept tree} daya tarik wisata}
+    \label{fig:concept-tree}
 \end{figure}
-\textit{Flowchart} sistem pada gambar 3.3 dapat dijelaskan secara umum sebagai tiga kegiatan utama. Tiga kegiatan tersebut adalah mendapatkan alur mendapatkan informasi kontekstual dan preferensi tujuan wisata pengguna, melakukan \textit{reasoning} di \textit{web server} berdasar data yang masuk, dan mendapatkan rekomendasi tujuan wisata secara visual.
+\cleardoublepage
+\subsection{\textit{Knowledge Acquisition}}
+\par
+Tahap ini merupakan tahap independen dalam pengembangan \textit{ontology}, namun tetap dilaksanakan bersamaan dengan tahap lain.
+Untuk domain pariwisata, seabgian besar pengetahuan diperoleh pada awal pengembangan ontology. Ada empat aktivitas yang dilakukan
+ketika berada di tahap \textit{knowledge acquisition}, yaitu:
+\begin{itemize}
+\item Mengadakan wawancara dengan pakar. Wawancara awal ini diadakan dengan tujuan dapat memperoleh ikhtisar dari domain pariwisata.	 
+\item Mempelajari literatur yang berhubungan dengan domain pariwisata. Hal ini dapat mengurangi waktu yang diperlukan
+dari pakar untuk memberikan instruksi ketika memperoleh konsep domain pariwisata.
+\item Setelah memperoleh pengetahuan mengenai domain pariwisata, pencarian konsep bergerak dari umum hingga mengerucut
+terutama mengenai kategori daya tarik pariwisata.
+\item Konfirmasi konsep domain pariwisata oleh pakar.
+\end{itemize}
+
+\subsection{\textit{Implementation}}
+\par
+Desain \textit{ontology} diimplementsasikan dengan menggunakan \textit{framework} khusus untuk membangun aplikasi
+\textit{knowlede-based} yaitu Protege. Protege memiliki beberapa kelebihan, diantaranya: 
+\begin{itemize}
+\item \textit{Ontology} yang dibangun dengan Protege memenuhi standar W3C,
+\item UI sederhana
+\item dukungan visualisasi
+\end{itemize}
+
 \section{Metodologi Pengembangan Sistem}
+
 
 Tugas akhir ini akan disusun dengan melalui tahap-tahap berikut:
 \begin{enumerate}
-
-\item Desain Sistem
-\par
-Dalam tahap ini ada dua bagian, yaitu desain struktur \textit{ontology} dan pengembangan sistem.
-\par
-Tahap-tahap dalam mendesain struktur \textit{ontology} mengikuti \textit{Methontology} \cite{jones1998methodologies}, yaitu:
-\begin{enumerate}
-	\item Spesifikasi
-	\item Akuisisi pengetahuan
-	\item Konseptualisasi
-	\item Integrasi
-	\item Implementasi
-	\item Evaluasi
-	\item Dokumentasi
-\end{enumerate} 
-Berdasarkan lima komponen penting pada RS yang telah dijelaskan di gambar 3.1, berikut adalah langkah bagian pengembangan sistem yang akan ditempuh:
-\begin{enumerate}
-	\item Merancang GUI pada sisi \textit{client}.
-	\item Merancang skema interaksi penggunaan aplikasi.
-	\item Merancang format data yang dipertukarkan antara \textit{client} dan \textit{web server}.
-	\item Merancang algoritma pada sisi \textit{client} dan \textit{web server}.
-	\item Merancang \textit{query} untuk mengakuisisi pengetahuan pada data yang disimpan di \textit{SPARQL}.
-\end{enumerate}
-
 \item Pengumpulan Data Lokasi Wisata Bandung
 \newline
 Tujuan tahap ini adalah mendapatkan data lokasi wisata. Metode yang dapat dilakukan adalah:
 \begin{enumerate}
-	\item Observasi.
-	Metode observasi dilakukan untuk mendapatkan data lokasi wisata yang tidak dikelola oleh pihak swasta.
-	\item Wawancara pihak pengelola tempat wisata.
-	Metode wawancara dilakukan untuk lokasi wisata yang dikelola oleh pihak swasta.
+	\item Pencarian data di Google, TripAdvisor dan Foursquare
+	\item Pengajuan permintaan data ke Dinas Kebudayaan dan Pariwisata Jawa Barat
 \end{enumerate}
+
+\item Analisis Sistem
 \par
-Tujuan dari tahap ini adalah mendapatkan data koordinat tujuan wisata di \textit{Google Maps}, analisis kondisi tujuan wisata pada cuaca cerah dan hujan, serta waktu ketika tujuan wisata dapat diakses.
+Beberapa kebutuhan perangkat lunak yang harus dipenuhi dalam membangun \textit{recommender system} ini
+adalah:
+\begin{enumerate}
+	\item Gambaran sistem secara umum
+	\item \textit{Graphical user interface}
+	\item \textit{Software interface}
+	\item Basis data
+\end{enumerate}
+ 
+Pada tahap ini juga dilakukan penerapan pengembangan \textit{ontology} dengan \textit{Methontology}.
 
 \item Implementasi Sistem
 \newline
 Tahap implementasi meliputi:
 \begin{enumerate}
-	\item Pengembangan aplikasi Android.
-	\item Pengembangan sisi \textit{server}.
-	\item Implementasi komunikasi antar isi \textit{client} dan sisi \textit{server} serta \textit{client} dan \textit{Google Maps API}.
-	\item Implementasi \textit{ontology} pada basis data \textit{SPARQL}.
+	\item Pengembangan aplikasi Android sebagai sisi \textit{client}.
+	\item Pengembangan \textit{backend}.
+	\item Implementasi komunikasi antara \textit{client} dan \textit{server}. 
+	\item Implementasi \textit{ontology} dengan Protege.
 \end{enumerate}
  
 \item Pengujian
 \newline
 Tahap pengujian memiliki dua jenis pengujian:
 \begin{enumerate}
-	\item Pengujian utnuk menemukan \textit{bug}. Untuk menemukan \textit{bug}, sistem akan diuji coba dengan menggunakan skema \textit{white box}.
-	\item Pengujian akurasi sistem. 
+	\item Pengujian untuk menemukan tingkat kepuasan dari sisi pengguna`
+	\item Pengujian akurasi sistem dengan melibatkan pakar. 
 \end{enumerate}
 
 \item Pembuatan Laporan
@@ -143,3 +421,202 @@ Tahap pengujian memiliki dua jenis pengujian:
 Laporan akhir akan ditulis sesuai dengan kaidah dan ketetapan yang berlaku di institusi.
 \end{enumerate}
 
+
+\section{Model Rekomendasi Daya Tarik Wisata}
+Sistem yang dikembangkan memiliki masukan berupa prefrensi pengguna terhadap kategori daya tarik wisata tertentu dan 
+\textit{contextual factor} seperti lokasi pengguna, cuaca disekitar daya tarik wisata serta waktu lokal. Sistem akan memberikan sepuluh rekomendasi tujuan wisata
+paling sesuai berdasarkan masukan yang diterima.
+
+\subsection{Mendapatkan Masukan Preferensi Pengguna}
+
+Untuk mendapatkan preferensi pengguna terhadap suatu kategori daya tarik wisata, pengguna dapat menyatakan secara eksplisit ketertarikan terhadap suatu kategori daya tarik wisata.
+Ada empat tingkat ketertarikan pengguna, yaitu tidak ada, rendah, cukup tinggi dan tinggi. Setiap tingkat ketertarikan memiliki nilai bobot tersendiri. Berikut adalah nilai bobot dari
+setiap tingkat ketertarikan.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|c| } 
+\hline
+	\textbf{Tingkat} & \textbf{Nilai bobot}\\
+	\hline
+	Tidak ada & 0 \\
+	\hline
+	Rendah & 3 \\
+	\hline
+	Cukup tinggi & 6\\
+	\hline
+	Tinggi & 9\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel nilai numerik tingkat ketertarikan pengguna terhadap suatu kategori}
+\label{table:weight-pref}
+\end{table}
+
+Pengguna memilih tingkat ketertarikan yang sesuai melalui tampilan GUI berikut:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{img/gui-pref.png}
+    \caption{GUI pada \textit{frontend} untuk mendapatkan masukan tingkat ketertarikan dari pengguna}
+    \label{fig:guipref}
+\end{figure}
+\par
+Semua kategori daya tarik wisata merupakan subkelas langsung dari kelas alam, budaya dan buatan. Pengguna dapat mengetahui keterangan kategori daya tarik wisata dengan cara
+\textit{tap} teks kategori.
+
+\par
+Aplikasi \textit{frontend} akan mengirimkan lokasi dan tingkat ketertarikan pengguna melalui protokol HTTP. Format data yang dikirimkan sebagai HTTP request adalah sebagai
+berikut:
+\lstset{
+   backgroundcolor=\color{white},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+\begin{lstlisting}
+{	
+	"location":{
+		"lat":-7.1637898,
+		"lng":107.3568193
+	},
+	"preferences":{
+		"Petualangan_alam":0,
+		"Flora_fauna":0,
+		"Keindahan_alam":9,
+		"Pesisir_perairan":0,
+		"Hiburan":9,
+		"Event":0,
+		"Olahraga":0,
+		"Pusat_belanja":0,
+      	"Kuliner":0,
+		"Taman_hiburan":0,
+		"Kegiatan_ekonomi":0,
+		"Fasilitas_budaya":0,
+		"Seni":0,
+		"Situs":0,
+		"Wisata_kota":0
+	}
+}
+\end{lstlisting}
+
+Nilai pada setiap \textit{field} di \textit{preferences} merupakan nilai numerik dari tingkat ketertarikan pengguna terhadap suatu kategori.
+
+\subsection{Menyaring Daya tarik Wisata Berdasarkan Masukan}
+\par
+Terdapat tiga tahap dalam memproses masukan \textit{recommender system} hingga pengguna mendapat rekomendasi daya tarik wisata. Kedua tahap itu adalah:
+\begin{enumerate}
+\item \textbf{Memilih daya tarik wisata yang buka}
+\par
+Untuk memilih daya tarik wisata yang sedang buka, \textit{Context Aware API Server} mengeksekusi SPARQL \textit{query} terhadap objek \textit{ontology}. Sebelum mengeksekusi
+\textit{query}, \textit{Context Aware API Server} harus mengetahui jam dan menit saat itu. Kemudian ilai jam dan menit dikonversikan dengan persamaan \ref{eq:transform}.
+\par
+Seleksi daya tarik wisata dilakukan berdasar atribut waktu perubahan status. Pemilihan atribut dilakukan berdasar hari eksekusi \textit{query}. Berikut adalah contoh 
+\textit{query} untuk memilih daya tarik wisata yang sedang buka pada hari senin pukul dua belas siang
+\begin{verbatim}
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX owl: <http://www.w3.org/2002/07/owl#>
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+	PREFIX ns: <http://www.semanticweb.org/dell/ontologies/2017/4/tourism#>
+			
+	SELECT ?destination 
+	WHERE {?destination ns:senin_buka ?open; ns:senin_tutup ?closed 
+	FILTER( (?open < 0.5 && 0.5 < ?closed)  
+	|| ((?closed > 0.5 || ?open < 0.5) && (?closed < ?open)) )}
+\end{verbatim}
+
+Hasil dari \textit{query} diatas adalah daftar nama \textit{instance} daya tarik wisata yang buka hari senin pukul dua belas siang.
+\item \textbf{Memberi nilai \textit{utility}}
+Nilai \textit{utility} setiap daya tarik wisata ditentukan dengan persamaan berikut:
+\begin{equation}
+util_i = e^{-(d_i p_i + w_i)}
+\label{eq:utility} 
+\end{equation}
+\par
+\textit{Utility} ditentukan dengan fungsi eksponen negatif dari $d_i$ sebagai jarak antara pengguna dengan daya tarik wisata ke $i$, $p_i$ sebagai nilai 
+\textit{dissimilarity} antara preferensi pengguna dengan kategori daya tarik wisata ke $i$ dan $w_i$ sebagai selisih nilai cuaca aktual di daya tarik wisata ke $i$ dengan
+nilai cuaca yang cocok untuk mengunjungi daya tarik wisata tersebut. Nilai $d_i$ didapatkan dengan persamaan \textit{euclidean}:
+
+\begin{equation}
+d_i = \sqrt{(l_1 - x_i)^2 + (l_2 - y_i)^2}
+\label{eq:euclidean} 
+\end{equation}
+\par
+dengan $l_1$ adalah \textit{latitude} dan $l_2$ adalah \textit{longitude} pengguna. Sedangkan $x_i$ adalah \textit{latitude} dan $y_i$ adalah \textit{longitude} dari
+daya tarik wisata ke $i$.
+\par
+Sedangkan untuk menghitung nilai \textit{dissimilarity} antara preferensi pengguna terhadap kategori daya tarik wisata ke $i$ dapat menggunakan persamaan \ref{eq:pref}:
+\begin{equation}
+p_i = -\sum_{j=1}^{|m|} m_j n_{ij}
+\label{eq:pref} 
+\end{equation}
+Sementara $m$ merupakan vektor tingkat ketertarikan pengguna terhadap kategori daya tarik wisata 
+dan $n_{ij}$ adalah hubungan antara daya tarik wisata ke $i$ dengan kategori ke $j$. Nilai hubungan tersebut akan selalu bernilai lebih dari sama dengan 0.
+\par
+Karena setiap daya tarik wisata tidak menjadi \text{instance} langsung dari kategori, melainkan menjadi \text{instance} dari subkategori yang diagregasi oleh suatu kategori,
+maka untuk menghitung $n_{ij}$ digunakan persamaan \ref{eq:pref2}:
+\begin{equation}
+n_{ij} = \sum_{k=1}^{|o|} o_{ik}
+\label{eq:pref2} 
+\end{equation}
+\par
+dengan $o_{ik}$ adalah nilai hubungan antara daya tarik wisata ke $i$ dengan subkategori ke $k$ yang menjadi subkelas dari kategori ke $j$. Nilai hubungan menjadi satu jika
+\textit{instance} daya tarik wisata memang \textit{instance} dari subkategori tersebut dan nol jika bukan.
+\par
+Sedangkan untuk menilai seberapa layak daya tarik wisata dikunjungi berdasarkan cuaca menggunakan persamaan \ref{eq:weather}:
+\begin{equation}
+w_i = max(0, r_i - s_i)
+\label{eq:weather} 
+\end{equation}
+dengan $r_i$ adalah nilai numerik dari kondisi cuaca yang membuat daya tarik wisata layak dikunjungi dan $s_i$ adalah nilai numerik dari kondisi cuaca terkini di daya tarik wisata. Nilai $s_i$
+didapatkan dari lokasi acuan cuaca yang paling terdekat dengan daya tarik wisata tersebut.
+
+\end{enumerate}
+
+\section{Desain Sistem}
+Sebelum masuk pada fase pengembangan sistem, menentukan desain kasar sistem merupakan hal yang krusial. Hal tersebut disebabkan karena memahami komponen apa saja yang ada pada sistem dan relasi antar komponen dapat membantu menentukan arah pengembangan sistem. 
+
+ 
+\subsection{Arsitektur Sistem}
+\par
+Gambar \ref{fig:arch-sys} menjelaskan desain arsitektur sistem dan relasi-relasi antar komponen.
+\newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{img/arsitektur_sistem.png}
+    \caption{Gambaran komponen-komponen sistem dan relasinya}
+    \label{fig:arch-sys}
+\end{figure}
+
+\par
+Terdapat empat lima  komponen penting dari sistem yang dikembangkan, yaitu \textit{client}, \textit{server}, 
+\textit{Google Maps API} dan \textit{Open Weather Map API}.
+
+\subsection{Flowchart Sistem}
+Secara umum, aliran kerja sistem dijelaskan pada gambar \ref{fig:flowchart} dibawah ini:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{img/flowchart-general.png}
+    \caption{Gambaran alur kerja sistem ketika pengguna ingin mendapat rekomendasi daya tarik wisata}
+    \label{fig:flowchart}
+\end{figure}
+\textit{Flowchart} sistem pada gambar \ref{fig:flowchart} dapat dijelaskan secara umum sebagai tiga kegiatan utama. Tiga kegiatan tersebut adalah mendapatkan alur mendapatkan informasi kontekstual dan preferensi tujuan wisata pengguna, 
+melakukan \textit{reasoning} di \textit{web server} berdasar data yang masuk, dan mendapatkan rekomendasi tujuan wisata.
+\cleardoublepage
+\par
+\textit{Context Aware API Server} memiliki dua \textit{thread} yang dijalankan bersamaan. \textit{Thread} pertama untuk mendengarkan permintaan rekomendasi tujuan wisata dan yang kedua
+untuk memperbaharui data cuaca di lokasi yang menjadi acuan kondisi cuaca.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{img/flowchart-general-2.png}
+    \caption{Gambaran alur kerja sistem aktivitas yang dilakukan server secara berkala}
+    \label{fig:flowchart2}
+\end{figure}
+
+\section{Contoh Penghitungan}
