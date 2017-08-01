@@ -1,30 +1,49 @@
 \chapter{Pendahuluan}
 \section{Latar Belakang}
 
-Pariwisata telah menjadi sektor ekonomi yang penting di Indonesia. Hal tersebut terbukti ketika pada tahun 2014, sektor pariwisata menyumpang penerimaan devisa negara terbesar
-keempat setelah komoditas minyak, batu bara dan kelapa sawit. Pada tahun 2009, sektor pariwisata bahkan menempati peringkat ketiga melebihi batu bara\cite{bps1}. Meskipun memang peringkat penyumbang devisa negara turun, sektor pariwisata berhasil meningkatkan sumbangan devisa dari USD 6,297 miliar di tahun 2010, hingga menjadi USD 11,16613 miliar di tahun 2014 \cite{bps2}.
+Pariwisata telah menjadi sektor ekonomi yang penting di Indonesia. Hal tersebut terbukti ketika pada tahun 2014, sektor pariwisata menyumbang
+penerimaan devisa negara terbesar keempat setelah komoditas minyak, batu bara dan kelapa sawit. Pada tahun 2009, sektor pariwisata bahkan 
+menempati peringkat ketiga melebihi batu bara\cite{bps1}. Meskipun memang peringkat penyumbang devisa negara turun, sektor pariwisata 
+berhasil meningkatkan sumbangan devisa dari USD 6,297 miliar di tahun 2010, hingga menjadi USD 11,16613 miliar di tahun 2014 \cite{bps2}.
 \par
-Pada era teknologi informasi ini, mendapatkan informasi umum apapun yang diinginkan adalah hal yang mudah. Calon turis mencari tahu informasi tujuan wisata secara manual dengan \textit{search engine} atau media sosial merupakan hal yang sudah biasa. Layanan di Internet yang sangat populer untuk mendapatkan rekomendasi tujuan wisata diantaranya TripAdvisor dan Instagram. Namun, mendapatkan informasi tujuan wisata yang sesuai dengan preferensi pengguna melalui cara ini memiliki kelemahan, diantaranya adalah menghasilkan rekomendasi yang kurang terpersonalisasi.
+Pada era teknologi informasi ini, mendapatkan informasi umum apapun yang diinginkan adalah hal yang mudah. Calon turis mencari tahu 
+informasi tujuan wisata secara manual dengan \textit{search engine} atau media sosial merupakan hal yang sudah biasa. Layanan di Internet 
+yang sangat populer untuk mendapatkan rekomendasi tujuan wisata diantaranya TripAdvisor dan Instagram. Namun, mendapatkan informasi tujuan 
+wisata yang sesuai dengan preferensi pengguna melalui cara ini memiliki kelemahan, diantaranya adalah menghasilkan rekomendasi yang kurang 
+terasa personal.
 \par 
-Rekomendasi yang kurang terpersonalisasi terjadi karena sistem terlalu menitikberatkan pada tujuan wisata yang sangat populer atau sistem tidak tanggap dengan kondisi yang dihadapi pengguna. Untuk mengatasi hal ini, maka \textit{recommender system} yang digunakan harus bersifat \textit{context-aware}\cite{alhazbi2013} dan menggunakan teknik \textit{knowldge-based} untuk memberikan rekomendasi yang adil. Salah satu model representasi pada \textit{knowledge-based} adalah \textit{ontology}. \textit{Ontology} memiliki keunggulan yaitu dapat merepresentasikan informasi kontekstual secara semantik dan kemudahan untuk menjelaskan bagaimana sistem dapat mencapai suatu kesimpulan. Namun, \textit{ontology} sendiri tidak dapat melakukan \textit{reasoning} dengan sendirinya karena \textit{ontology} hanya merepresentasikan pengetahuan. Oleh karena itu dibutuhkan metode \textit{reasoning} untuk mengambil kesimpulan dari representasi pengetahuan yang ada.
+Rekomendasi yang kurang personal terjadi karena sistem terlalu menitikberatkan pada tujuan wisata yang sangat populer atau sistem tidak 
+tanggap dengan kondisi yang dihadapi pengguna. Untuk mengatasi hal ini, maka \textit{recommender system} yang digunakan harus bersifat 
+\textit{context-aware}\cite{alhazbi2013} dan menggunakan teknik \textit{knowldge-based} untuk memberikan rekomendasi yang adil. 
+Salah satu model representasi pada \textit{knowledge-based} adalah \textit{ontology}. Banyak studi berkaitan dengan \textit{recommender system}
+yang menggunakan \textit{ontology}. \textit{Ontology} memiliki keunggulan yaitu 
+dapat merepresentasikan informasi kontekstual secara semantik dan kemudahan untuk menjelaskan bagaimana sistem dapat mencapai suatu 
+kesimpulan. 
 \par
-Pada prakteknya, \textit{context-aware} cocok untuk diterapkan pada domain pariwisata. \textit{Recommender system} yang bersifat \textit{context-aware} dapat mendukung turis yang sedang bergerak dengan memberikan rekomendasi tujuan wisata yang cocok berdasarkan keadaan lingkungan turis berada dan preferensi turis tersebut\cite{alhazbi2013}. Hal itu dapat dicapai dengan memanfaatkan lokasi pengguna, cuaca dan waktu saat itu \cite{jakkhupan2015}. 
+Pada prakteknya, \textit{context-aware} cocok untuk diterapkan pada domain pariwisata. \textit{Recommender system} yang bersifat 
+\textit{context-aware} dapat mendukung turis yang sedang bergerak dengan memberikan rekomendasi tujuan wisata yang cocok berdasarkan keadaan 
+lingkungan turis berada dan preferensi turis tersebut\cite{alhazbi2013}. Hal itu dapat dicapai dengan memanfaatkan lokasi pengguna, 
+cuaca dan waktu saat itu \cite{jakkhupan2015}. 
 \par
-Pada tugas akhir ini akan dilakukan pengembangan dan pengujian \textit{recommender system} dengan teknik \textit{knowldge-based} dan bersifat \textit{context-aware} dengan memanfaatkan variabel lokasi pengguna, cuaca dan waktu serta preferensi kategori wisata yang ingin dikunjungi. Semua variabel masukan tersebut diproses dengan metode \textit{reasoning} berdasarkan model \textit{ontology} yang dibangun dan menghasilkan keluaran berupa rekomendasi tujuan wisata. Pengujian sistem dilakukan dari sisi akurasi rekomendasi dan persepsi pengguna.
+Pada tugas akhir ini akan dilakukan pengembangan dan pengujian \textit{recommender system} dengan teknik \textit{knowldge-based} dan bersifat 
+\textit{context-aware} dengan memanfaatkan variabel lokasi pengguna, cuaca dan waktu serta preferensi kategori wisata yang ingin dikunjungi. 
+Semua variabel masukan tersebut diproses dengan metode \textit{reasoning} hasil pengembangan dari persamaan eksponensial negatif yang digunakan
+pada studi sebelumnya \cite{de2014context}.
 
 \section{Perumusan Masalah}
 \begin{enumerate}
 	\item Bagaimana model \textit{ontology} yang tepat untuk merepresentasikan pengetahuan sistem pada domain pariwisata?
 	\item Bagaimana metode \textit{reasoning} untuk merekomendasikan tujuan wisata?
-	\item Bagaimana skema pengujian dari sisi akurasi dan persepsi pengguna untuk \textit{recommender system} yang bersifat \textit{context-aware}?
+	\item Bagaimana skema pengujian dari sudut pandang pakar dan persepsi pengguna untuk \textit{recommender system} yang bersifat \textit{context-aware}?
 	
 \end{enumerate}
 \section{Tujuan Penulisan}
 \begin{enumerate}
-	\item Membangun model \textit{ontology} yang tepat untuk mereprsentasikan pengetahuan sistem pada domain pariwisata.
+	\item Membangun model \textit{ontology} yang tepat untuk merepresentasikan pengetahuan sistem pada domain pariwisata.
 	\item Mengimplementasikan metode \textit{reasoning} untuk merekomendasikan tujuan wisata.
-	\item Menguji performansi sistem dari sisi akurasi (melibatkan \textit{domain expert}) dan persepsi pengguna.
+	\item Menguji performansi sistem dari sudut pandang pakar dan persepsi pengguna.
 \end{enumerate}
+
 \section{Batasan Masalah}
 \begin{enumerate}
 	\item Sistem hanya merekomendasikan tujuan wisata di Bandung Raya, yang meliputi: Kota Bandung, Kabupaten Bandung, Kabupaten Bandung Barat, Kota Cimahi dan Kabupaten Sumedang.
@@ -33,6 +52,7 @@ Pada tugas akhir ini akan dilakukan pengembangan dan pengujian \textit{recommend
 	\item \textit{Mobile platform} yang digunakan adalah Android.
 	\item Pengguna diasumsikan sedang berada di Bandung Raya ketika menggunakan sistem yang dibangun. 
 \end{enumerate}
+
 \section{Rencana Kegiatan}
 Kegiatan-kegiatan yang akan dilakukan selama proses penyusunan tugas akhir adalah sebagai berikut:
 \begin{enumerate}

@@ -17,51 +17,58 @@ A level-1 auxiliary file: Lampiran.aux
 Database file #1: References.bib.bib
 Warning--entry type for "bps1" isn't style-file defined
 --line 36 of file References.bib.bib
-Warning--entry type for "bps2" isn't style-file defined
+Warning--entry type for "methontologyvis" isn't style-file defined
 --line 44 of file References.bib.bib
-Warning--entry type for "androidmarket" isn't style-file defined
---line 74 of file References.bib.bib
+Warning--entry type for "bps2" isn't style-file defined
+--line 49 of file References.bib.bib
+"{" immediately follows a field name---line 210 of file References.bib.bib
+ :  year
+ :      {2005}
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in methontologyvis
+Warning--empty booktitle in baizalevaluating
+Warning--empty year in oxford2005
 Warning--empty journal in fernandez1997methontology
 Warning--empty journal in jones1998methodologies
-You've used 15 entries,
+You've used 20 entries,
             2253 wiz_defined-function locations,
-            625 strings with 7485 characters,
-and the built_in function-call counts, 5363 in all, are:
-= -- 504
-> -- 300
+            649 strings with 8223 characters,
+and the built_in function-call counts, 7060 in all, are:
+= -- 666
+> -- 374
 < -- 0
-+ -- 125
-- -- 108
-* -- 399
-:= -- 882
-add.period$ -- 46
-call.type$ -- 15
-change.case$ -- 96
++ -- 157
+- -- 134
+* -- 530
+:= -- 1140
+add.period$ -- 59
+call.type$ -- 20
+change.case$ -- 121
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 182
-empty$ -- 401
-format.name$ -- 108
-if$ -- 1103
+cite$ -- 25
+duplicate$ -- 250
+empty$ -- 547
+format.name$ -- 134
+if$ -- 1462
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 13
-newline$ -- 79
-num.names$ -- 30
-pop$ -- 124
+int.to.str$ -- 20
+missing$ -- 19
+newline$ -- 102
+num.names$ -- 38
+pop$ -- 165
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 104
 quote$ -- 0
-skip$ -- 124
+skip$ -- 163
 stack$ -- 0
-substring$ -- 279
-swap$ -- 52
+substring$ -- 399
+swap$ -- 68
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
-warning$ -- 2
-while$ -- 47
-width$ -- 17
-write$ -- 155
-(There were 5 warnings)
+type$ -- 74
+warning$ -- 5
+while$ -- 62
+width$ -- 22
+write$ -- 199
+(There was 1 error message)

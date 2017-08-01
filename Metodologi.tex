@@ -91,11 +91,11 @@ untuk mendapatkan istilah-istilah pada domain kategori pariwisata. Tabel \ref{ta
 	hewan, petualangan, fantasi dan menyajikan acara, wahana, dan pengalaman dalam suatu lingkungan terkendali \cite{inskeep1991tourism}.
 	\textit{Theme park} cukup sulit dibedakan dari \textit{amusement park} kecuali dari ada atau tidaknya tema tertentu yang digunakan. Namun
 	kedunya tetap masih bisa disebut sebagai taman hiburan.
-	Pada kategori ini terdapat subkategori \textbf{taman hiburan}.\\
+	Pada kategori ini terdapat subkategori \textbf{taman hiburan} dan \textbf{sirkus}.\\
 	\hline
 	Kegiatan ekonomi & Subkelas dari daya tarik budaya. Kegiatan ekonomi yang dilakukan penduduk lokal dapat menjadi daya tarik wisata tersendiri seperti perkebunan teh, 
 	pasar terapung diatar sungai Barito dan sebagainya.
-	Pada kategori ini terdapat subkategori \textbf{agrikultur} dan \textbf{pasar tradisional}.\\
+	Pada kategori ini terdapat subkategori \textbf{agrowisata} dan \textbf{pasar tradisional}.\\
 	\hline
 	Fasilitas budaya & Subkelas dari daya tarik budaya. Berbagai fasilitas yang dibangun dengan tujuan menunjukkan ciri khusus budaya suatu daerah,
 	contohnya seperti museum, pusat pembelajaran budaya, galeri seni, termasuk dalam kategori ini.
@@ -111,7 +111,7 @@ untuk mendapatkan istilah-istilah pada domain kategori pariwisata. Tabel \ref{ta
 	dalam kategori ini.
 	Pada kategori ini terdapat subkategori \textbf{religi}, \textbf{situs budaya}, dan \textbf{situs sejarah}.\\
 	\hline
-	Urban & Subkelas dari daya tarik budaya. Area urban dengan arsitektur bangunan, sudut kota, pusat publik, fasilitas belanja dan aktivitas di suatu jalan
+	Wisata kota & Subkelas dari daya tarik budaya. Area urban dengan arsitektur bangunan, sudut kota, pusat publik, fasilitas belanja dan aktivitas di suatu jalan
 	yang beragam dapat menciptakan daya tarik wisata tersendiri. Segala hal menarik di bagian area urban yang dapat menimbulkan rasa tertarik
 	masuk ke dalam kategori ini. Pada kategori ini terdapat subkategori \textbf{kuliner khas}, \textbf{seni pertunjukan}, \textbf{rute kota},
 	dan \textbf{taman kota}.\\
@@ -121,8 +121,7 @@ untuk mendapatkan istilah-istilah pada domain kategori pariwisata. Tabel \ref{ta
 	\hline
 	Waktu buka & Setiap destinasi wisata memiliki waktu bukanya tersendiri. Waktu buka bisa berbeda setiap harinya. \\ 
 	\hline
-	Infrastruktur & Cuaca disekitar destinasi wisata harus diperhitungkan agar daya tarik wisata dapat dinikmati secara penuh. Infrastruktur
-	daya tarik wisata dapat mendukung agar daya tarik wisata dapat dikunjungi hingga kondisi cuaca tertentu. Kondisi cuaca pada tugas akhir ini
+	Cuaca & Cuaca disekitar destinasi wisata harus diperhitungkan agar daya tarik wisata dapat dinikmati secara penuh. Kondisi cuaca pada tugas akhir ini
 	dinyatakan dengan tiga tingkat yaitu \textbf{buruk}, \textbf{kurang baik} dan \textbf{baik}.\\ 
 	\hline
 \caption{istilah dan definisi dalam domain kateogori wisata}
@@ -438,13 +437,13 @@ setiap tingkat ketertarikan.
 \hline
 	\textbf{Tingkat} & \textbf{Nilai bobot}\\
 	\hline
-	Tidak ada & 0 \\
+	Tidak tertarik & 0 \\
 	\hline
-	Rendah & 3 \\
+	Kurang tertarik & 3 \\
 	\hline
-	Cukup tinggi & 6\\
+	Cukup tertarik & 6\\
 	\hline
-	Tinggi & 9\\
+	Sangat tertarik & 9\\
 	\hline
 \end{tabular}
 \end{center}
@@ -482,25 +481,25 @@ berikut:
 \begin{lstlisting}
 {	
 	"location":{
-		"lat":-7.1637898,
-		"lng":107.3568193
+		"lat":float,
+		"lng":float
 	},
 	"preferences":{
-		"Petualangan_alam":0,
-		"Flora_fauna":0,
-		"Keindahan_alam":9,
-		"Pesisir_perairan":0,
-		"Hiburan":9,
-		"Event":0,
-		"Olahraga":0,
-		"Pusat_belanja":0,
-      	"Kuliner":0,
-		"Taman_hiburan":0,
-		"Kegiatan_ekonomi":0,
-		"Fasilitas_budaya":0,
-		"Seni":0,
-		"Situs":0,
-		"Wisata_kota":0
+		"Petualangan_alam":int,
+		"Flora_fauna":int,
+		"Keindahan_alam":int,
+		"Pesisir_perairan":int,
+		"Hiburan":int,
+		"Event":int,
+		"Olahraga":int,
+		"Pusat_belanja":int,
+		"Kuliner":int,
+		"Taman_hiburan":int,
+		"Kegiatan_ekonomi":int,
+		"Fasilitas_budaya":int,
+		"Seni":int,
+		"Situs":int,
+		"Wisata_kota":int
 	}
 }
 \end{lstlisting}
@@ -535,13 +534,13 @@ Hasil dari \textit{query} diatas adalah daftar nama \textit{instance} daya tarik
 \item \textbf{Memberi nilai \textit{utility}}
 Nilai \textit{utility} setiap daya tarik wisata ditentukan dengan persamaan berikut:
 \begin{equation}
-util_i = e^{-(d_i p_i + w_i)}
+util_i = e^{-(d_i + w_i)} (p_i + 10^{-5})
 \label{eq:utility} 
 \end{equation}
 \par
 \textit{Utility} ditentukan dengan fungsi eksponen negatif dari $d_i$ sebagai jarak antara pengguna dengan daya tarik wisata ke $i$, $p_i$ sebagai nilai 
 \textit{dissimilarity} antara preferensi pengguna dengan kategori daya tarik wisata ke $i$ dan $w_i$ sebagai selisih nilai cuaca aktual di daya tarik wisata ke $i$ dengan
-nilai cuaca yang cocok untuk mengunjungi daya tarik wisata tersebut. Nilai $d_i$ didapatkan dengan persamaan \textit{euclidean}:
+nilai cuaca yang cocok untuk mengunjungi daya tarik wisata tersebut.Nilai $d_i$ didapatkan dengan persamaan \textit{euclidean}:
 
 \begin{equation}
 d_i = \sqrt{(l_1 - x_i)^2 + (l_2 - y_i)^2}
@@ -571,10 +570,10 @@ dengan $o_{ik}$ adalah nilai hubungan antara daya tarik wisata ke $i$ dengan sub
 \par
 Sedangkan untuk menilai seberapa layak daya tarik wisata dikunjungi berdasarkan cuaca menggunakan persamaan \ref{eq:weather}:
 \begin{equation}
-w_i = max(0, r_i - s_i)
+w_i = s_i - 1
 \label{eq:weather} 
 \end{equation}
-dengan $r_i$ adalah nilai numerik dari kondisi cuaca yang membuat daya tarik wisata layak dikunjungi dan $s_i$ adalah nilai numerik dari kondisi cuaca terkini di daya tarik wisata. Nilai $s_i$
+dengan $s_i$ adalah nilai numerik dari kondisi cuaca terkini di daya tarik wisata. Nilai $s_i$
 didapatkan dari lokasi acuan cuaca yang paling terdekat dengan daya tarik wisata tersebut.
 
 \end{enumerate}
@@ -619,4 +618,196 @@ untuk memperbaharui data cuaca di lokasi yang menjadi acuan kondisi cuaca.
     \label{fig:flowchart2}
 \end{figure}
 
-\section{Contoh Penghitungan}
+\section{Skenario Pengujian}
+Pengujian dilakukan terhadap pakar pariwisata dan pengguna biasa, sehingga parameter yang diujikan di kedua pengujian pun berbeda.
+
+\subsection{Pengujian dengan Pakar Pariwisata}
+\par
+Pengujian ini bertujuan untuk mengetahui seberapa besar relevansi rekomendasi yang diberikan kepada pengguna dilihat dari preferensi terhadap
+kategori destinasi wisata yang menjadi rekomendasi. Untuk mengukur relevansi rekomendasi, parameter yang dapat digunakan untuk
+pengujian adalah \textit{precision}\cite{arnett2015recommender}\cite{chen2012recommendation}.
+\textit{Precision} merupakan rasio perbandingan objek yang relevan dengan semua objek yang terpilih. Precision dihitung dengan persamaan \ref{eq:precision}:
+\begin{equation}
+Precision = \frac{TP}{TP + FP}
+\label{eq:precision} 
+\end{equation}
+\par
+dengan $TP$ (\textit{true positive}) adalah destinasi wisata yang tepat dengan preferensi kategori wisata yang dimasukkan dan $FP$ 
+(\textit{false positive}) adalah destinasi wisata yang kurang sesuai.
+
+\par
+Tabel \ref{table:scenario} adalah skenario pengujian sistem dengan penilaian oleh pakar.
+\begin{center}
+\small
+\begin{longtable}{ |l|l|l|l|m{2cm}| } 
+\hline
+\textbf{No} & \textbf{Lokasi pengguna} & \textbf{Waktu lokal} & \textbf{Cuaca} & \textbf{No Uji Preferensi} \\
+\hline
+1	&	Alun-alun Cimahi	&	09:00	& bagus & 1\\
+\hline
+2	&	Alun-alun Cimahi	&	09:00	& kurang bagus & 1\\
+\hline
+3	&	Alun-alun Cimahi	&	09:00	& buruk & 1\\
+\hline
+4	&	Alun-alun Cimahi	&	13:00	& bagus & 2\\
+\hline
+5	&	Alun-alun Cimahi	&	13:00	& kurang bagus & 2\\
+\hline
+6	&	Alun-alun Cimahi	&	13:00	& buruk & 2\\
+\hline
+7	&	Alun-alun Cimahi	&	18:00	& bagus & 3\\
+\hline
+8	&	Alun-alun Cimahi	&	18:00	& kurang bagus & 3\\
+\hline
+9	&	Alun-alun Cimahi	&	18:00	& buruk & 3\\
+\hline
+10	&	Jalan Setiabudhi Bandung	&	09:00	& bagus & 1\\
+\hline
+11	&	Jalan Setiabudhi Bandung	&	09:00	& kurang bagus & 1\\
+\hline
+12	&	Jalan Setiabudhi Bandung	&	09:00	& buruk & 1\\
+\hline
+13	&	Jalan Setiabudhi Bandung	&	13:00	& bagus & 2\\
+\hline
+14	&	Jalan Setiabudhi Bandung	&	13:00	& kurang bagus & 2\\
+\hline
+15	&	Jalan Setiabudhi Bandung	&	13:00	& buruk & 2\\
+\hline
+16	&	Jalan Setiabudhi Bandung	&	18:00	& bagus & 3\\
+\hline
+17	&	Jalan Setiabudhi Bandung	&	18:00	& kurang bagus & 3\\
+\hline
+18	&	Jalan Setiabudhi Bandung	&	18:00	& buruk & 3\\
+\hline
+19	&	Jalan Buah Batu	&	09:00	& bagus & 1\\
+\hline
+20	&	Jalan Buah Batu	&	09:00	& kurang bagus & 1\\
+\hline
+21	&	Jalan Buah Batu	&	09:00	& buruk & 1\\
+\hline
+22	&	Jalan Buah Batu	&	13:00	& bagus & 2\\
+\hline
+23	&	Jalan Buah Batu	&	13:00	& kurang bagus & 2\\
+\hline
+24	&	Jalan Buah Batu	&	13:00	& buruk & 2\\
+\hline
+25	&	Jalan Buah Batu	&	18:00	& bagus & 3\\
+\hline
+26	&	Jalan Buah Batu	&	18:00	& kurang bagus & 3\\
+\hline
+27	&	Jalan Buah Batu	&	18:00	& buruk & 3\\
+\hline
+\caption{Tabel skenario pengujian dengan pakar}
+\label{table:scenario}
+\end{longtable}
+\end{center}
+
+\par
+Nomor uji preferensi yang digunakan mengacu pada tabel \ref{table:scenario-pref}:
+\begin{center}
+\footnotesize
+\begin{longtable}{ |l|l|l| } 
+\hline
+\textbf{No} & \textbf{Kategori Wisata} & \textbf{Tingkat preferensi} \\
+\hline
+				1	&	Petualangan alam	& Sangat tertarik \\
+					&	Flora fauna			& Cukup tertarik \\
+					&	Keindahan alam		& Cukup tertarik \\
+					&	Pesisir perairan	& Cukup tertarik \\
+					&	Hiburan				& Tidak tertarik \\
+					&	Event				& Tidak tertarik \\
+					&	Olahraga			& Tidak tertarik \\
+					&	Pusat belanja		& Tidak tertarik \\
+					&	Kuliner				& Tidak tertarik \\
+					&	Taman hiburan		& Tidak tertarik \\
+					&	Kegiatan ekonomi	& Kurang tertarik \\
+					&	Fasilitas budaya	& Tidak tertarik \\
+					&	Seni				& Tidak tertarik \\
+					&	Situs				& Tidak tertarik \\
+					&	Wisata kota			& Tidak tertarik \\
+\hline
+				2	&	Petualangan alam	& Tidak tertarik \\
+					&	Flora fauna			& Tidak tertarik \\
+					&	Keindahan alam		& Tidak tertarik \\
+					&	Pesisir perairan	& Tidak tertarik \\
+					&	Hiburan				& Cukup tertarik \\
+					&	Event				& Cukup tertarik \\
+					&	Olahraga			& Cukup tertarik \\
+					&	Pusat belanja		& Cukup tertarik \\
+					&	Kuliner				& Sangat tertarik \\
+					&	Taman hiburan		& Sangat tertarik \\
+					&	Kegiatan ekonomi	& Tidak tertarik \\
+					&	Fasilitas budaya	& Sangat tertarik \\
+					&	Seni				& Sangat tertarik \\
+					&	Situs				& Sangat tertarik \\
+					&	Wisata kota			& Tidak tertarik \\
+\hline
+				3	&	Petualangan alam	& Tidak tertarik \\
+					&	Flora fauna			& Tidak tertarik \\
+					&	Keindahan alam		& Tidak tertarik \\
+					&	Pesisir perairan	& Tidak tertarik \\
+					&	Hiburan				& Sangat tertarik \\
+					&	Event				& Tidak tertarik \\
+					&	Olahraga			& Cukup tertarik \\
+					&	Pusat belanja		& Sangat tertarik \\
+					&	Kuliner				& Cukup tertarik \\
+					&	Taman hiburan		& Tidak tertarik \\
+					&	Kegiatan ekonomi	& Tidak tertarik \\
+					&	Fasilitas budaya	& Tidak tertarik \\
+					&	Seni				& Cukup tertarik \\
+					&	Situs				& Tidak tertarik \\
+					&	Wisata kota			& Sangat tertarik \\
+\hline
+\caption{Tabel uji preferensi}
+\label{table:scenario-pref}
+\end{longtable}
+\end{center}
+
+\subsection{Pengujian dengan Pengguna Umum}
+Pengujian terhadap persepsi pengguna umum dilakukan dengan tujuan mendapatkan tingkat akurasi rekomendasi dan tingkat kepuasan pengguna.
+Tingkat akurasi rekomendasi yang diperoleh seorang pengguna dihitung dengan persamaan \ref{eq:accuracy}\cite{baizalevaluating}:
+\begin{equation}
+akurasi = \frac{jumlah\_rekomendasi\_sukses}{jumlah\_permintaan\_rekomendasi}.
+\label{eq:accuracy} 
+\end{equation}
+\par
+dengan jumlah rekomendasi sukses bertambah setiap kali pengguna memilih destinasi wisata dari daftar rekomendasi yang baru saja diberikan.
+\newline
+\par
+Untuk mengukur tingkat kepuasan pengguna, parameter evaluasi yang digunakan adalah 
+\begin{itemize}
+	\item kualitas rekomendasi (\textit{perceived recommendation quality} / PRQ)
+	\item kemudahan penggunaan (\textit{usability} / USA) 
+	\item seberapa informatif detail destinasi wisata yang direkomendasikan (\textit{informative} / INF)
+	\item seberapa efisien aksi yang harus dilakukan pengguna hingga mendapat tujuan wisata yang disukai secara cepat (\textit{perceived efficiency} / PE) 
+	\item tingkat kepercayaan pengguna bahwa aplikasi dapat diandalkan untuk memberikan rekomendasi tujuan wisata(\textit{trust} / TR)
+\end{itemize}
+pengguna akan diminta untuk mengisi kuesioner setelah menggunakan aplikasi minimal satu kali meminta rekomendasi. Pernyataan yang diajukan pada kuesioner adalah sebagai
+berikut:
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |l|m{8cm}|l| } 
+\hline
+	\textbf{No} & \textbf{Pernyataan} & \textbf{Parameter}\\
+	\hline
+	1 & Saya suka dengan tempat wisata yang saya pilih dari daftar rekomendasi & PRQ \\
+	\hline
+	2 & Saya suka interaksi aplikasi ini & PRQ \\
+	\hline
+	3 & Saya merasa deskripsi tempat wisata di daftar rekomendasi sudah cukup informatif & INF \\
+	\hline
+	4 & Saya memiliki kesulitan dalam menggunakan aplikasi ini & USA \\
+	\hline
+	5 & Saya dapat menemukan tujuan wisata yang saya suka secara cepat & PE \\
+	\hline
+	6 & Saya akan menggunakan aplikasi ini jika saya ingin berwisata di Bandung & TR \\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Tabel pertanyaan kuesioner}
+\label{table:questionnaire}
+\end{table}
+
+Model dan pernyataan kuesioner yang disebutkan pada tabel \ref{table:questionnaire} diambil dari studi sebelumnya yang juga membahas
+evaluasi \textit{recommender system}\cite{baizalevaluating}. 

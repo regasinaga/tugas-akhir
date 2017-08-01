@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{methontologyvis}
+Methontology.
+\newblock \url{ http://rhizomik.net/html/~roberto/thesis/html/Methodology.html
+  }.
+\newblock accessed 1 Agustus 2017.
+
 \bibitem{abowd1997cyberguide}
 {\sc Abowd, G.~D., Atkeson, C.~G., Hong, J., Long, S., Kooper, R., and
   Pinkerton, M.}
@@ -11,6 +17,18 @@
 \newblock Ontology-based model in tourism context-aware systems.
 \newblock In {\em 2013 International Conference on ICT Convergence (ICTC)\/}
   (2013), IEEE, pp.~775--779.
+
+\bibitem{arnett2015recommender}
+{\sc Arnett, D.~K., Baizal, Z., et~al.}
+\newblock Recommender system based on user functional requirements using
+  euclidean fuzzy.
+\newblock In {\em Information and Communication Technology (ICoICT), 2015 3rd
+  International Conference on\/} (2015), IEEE, pp.~455--460.
+
+\bibitem{baizalevaluating}
+{\sc Baizal, Z., Murti, Y.~R., et~al.}
+\newblock Evaluating functional requirements-based compound critiquing on
+  conversational recommender system.
 
 \bibitem{blanco2008flexible}
 {\sc Blanco-Fern{\'a}ndez, Y., Pazos-Arias, J.~J., Gil-Solla, A., Ramos-Cabrer,
@@ -42,6 +60,23 @@
   J.~D., and Borrajo, D.}
 \newblock Samap: An user-oriented adaptive system for planning tourist visits.
 \newblock {\em Expert Systems with Applications 34}, 2 (2008), 1318--1332.
+
+\bibitem{chen2012recommendation}
+{\sc Chen, R.-C., Huang, Y.-H., Bau, C.-T., and Chen, S.-M.}
+\newblock A recommendation system based on domain ontology and swrl for
+  anti-diabetic drugs selection.
+\newblock {\em Expert Systems with Applications 39}, 4 (2012), 3995--4006.
+
+\bibitem{oxford2005}
+{\sc Corporate}.
+\newblock {\em OxfordEnglish Dictionary 3rd}.
+\newblock OUP Oxford.
+
+\bibitem{de2014context}
+{\sc De~Pessemier, T., Dooms, S., and Martens, L.}
+\newblock Context-aware recommendations through context and activity
+  recognition in a mobile environment.
+\newblock {\em Multimedia Tools and Applications 72}, 3 (2014), 2925--2948.
 
 \bibitem{fernandez1997methontology}
 {\sc Fern{\'a}ndez-L{\'o}pez, M., G{\'o}mez-P{\'e}rez, A., and Juristo, N.}
@@ -82,15 +117,6 @@
 {\sc Ricci, F., Rokach, L., and Shapira, B.}
 \newblock {\em Introduction to recommender systems handbook}.
 \newblock Springer, 2011.
-
-\bibitem{androidmarket}
-{\sc Sui, L.}
-\newblock Strategy analytics: Android captures record 88 percent share of
-  global smartphone shipments in q3 2016.
-\newblock \url{
-  http://qz.com/826672/android-goog-just-hit-a-record-88-market-share-of-all-smart
-  phones/ }, 2016.
-\newblock accessed 5 November 2016.
 
 \bibitem{van2004context}
 {\sc Van~Setten, M., Pokraev, S., and Koolwaaij, J.}

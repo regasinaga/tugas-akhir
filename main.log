@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.19)  15 JUL 2017 03:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.19)  1 AUG 2017 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,17 +679,70 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(c:/texlive/2016/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(c:/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(c:/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks33
+\XKV@tempa@toks=\toks34
+)
+\XKV@depth=\count129
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/texlive/2016/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(c:/texlive/2016/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(c:/texlive/2016/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box37
+)
+\tc@llx=\dimen139
+\tc@lly=\dimen140
+\tc@urx=\dimen141
+\tc@ury=\dimen142
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(c:/texlive/2016/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen143
+\adjbox@Height=\dimen144
+\adjbox@Depth=\dimen145
+\adjbox@Totalheight=\dimen146
+
+(c:/texlive/2016/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count130
+)
+(c:/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box38
+\sift@deathcycles=\count131
+\@vwid@loff=\dimen147
+\@vwid@roff=\dimen148
+))
+(c:/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen149
+)
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen139
-\pgfutil@tempdimb=\dimen140
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen150
+\pgfutil@tempdimb=\dimen151
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box37
+\pgfutil@abb=\box39
 
 (c:/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -705,29 +758,29 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks34
-\pgfkeys@temptoks=\toks35
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks36
+\pgfkeys@tmptoks=\toks38
 ))
-\pgf@x=\dimen141
-\pgf@y=\dimen142
-\pgf@xa=\dimen143
-\pgf@ya=\dimen144
-\pgf@xb=\dimen145
-\pgf@yb=\dimen146
-\pgf@xc=\dimen147
-\pgf@yc=\dimen148
+\pgf@x=\dimen152
+\pgf@y=\dimen153
+\pgf@xa=\dimen154
+\pgf@ya=\dimen155
+\pgf@xb=\dimen156
+\pgf@yb=\dimen157
+\pgf@xc=\dimen158
+\pgf@yc=\dimen159
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count129
-\c@pgf@countb=\count130
-\c@pgf@countc=\count131
-\c@pgf@countd=\count132
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
+\c@pgf@counta=\count132
+\c@pgf@countb=\count133
+\c@pgf@countc=\count134
+\c@pgf@countd=\count135
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -741,8 +794,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count133
-\pgfsyssoftpath@bigbuffer@items=\count134
+\pgfsyssoftpath@smallbuffer@items=\count136
+\pgfsyssoftpath@bigbuffer@items=\count137
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -753,12 +806,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen149
-\pgfmath@count=\count135
-\pgfmath@box=\box38
-\pgfmath@toks=\toks40
-\pgfmath@stack@operand=\toks41
-\pgfmath@stack@operation=\toks42
+\pgfmath@dimen=\dimen160
+\pgfmath@count=\count138
+\pgfmath@box=\box40
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
@@ -778,55 +831,55 @@ x)
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
 etics.code.tex)))
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count136
+\c@pgfmathroundto@lastzeros=\count139
 ))
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen150
-\pgf@picmaxx=\dimen151
-\pgf@picminy=\dimen152
-\pgf@picmaxy=\dimen153
-\pgf@pathminx=\dimen154
-\pgf@pathmaxx=\dimen155
-\pgf@pathminy=\dimen156
-\pgf@pathmaxy=\dimen157
-\pgf@xx=\dimen158
-\pgf@xy=\dimen159
-\pgf@yx=\dimen160
-\pgf@yy=\dimen161
-\pgf@zx=\dimen162
-\pgf@zy=\dimen163
+\pgf@picminx=\dimen161
+\pgf@picmaxx=\dimen162
+\pgf@picminy=\dimen163
+\pgf@picmaxy=\dimen164
+\pgf@pathminx=\dimen165
+\pgf@pathmaxx=\dimen166
+\pgf@pathminy=\dimen167
+\pgf@pathmaxy=\dimen168
+\pgf@xx=\dimen169
+\pgf@xy=\dimen170
+\pgf@yx=\dimen171
+\pgf@yy=\dimen172
+\pgf@zx=\dimen173
+\pgf@zy=\dimen174
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
 e.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen164
-\pgf@path@lasty=\dimen165
+\pgf@path@lastx=\dimen175
+\pgf@path@lasty=\dimen176
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
 x
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen166
-\pgf@shorten@start@additional=\dimen167
+\pgf@shorten@end@additional=\dimen177
+\pgf@shorten@start@additional=\dimen178
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box39
-\pgf@hbox=\box40
-\pgf@layerbox@main=\box41
-\pgf@picture@serial@count=\count137
+\pgfpic=\box41
+\pgf@hbox=\box42
+\pgf@layerbox@main=\box43
+\pgf@picture@serial@count=\count140
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
 .tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen168
+\pgflinewidth=\dimen179
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
 ode.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen169
-\pgf@pt@y=\dimen170
-\pgf@pt@temp=\dimen171
+\pgf@pt@x=\dimen180
+\pgf@pt@y=\dimen181
+\pgf@pt@temp=\dimen182
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -840,19 +893,19 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen172
+\pgfarrowsep=\dimen183
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen173
-\pgf@sys@shading@range@num=\count138
+\pgf@max=\dimen184
+\pgf@sys@shading@range@num=\count141
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box42
+\pgfexternal@startupbox=\box44
 ))
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
@@ -866,7 +919,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box43
+\pgfnodeparttextbox=\box45
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
@@ -874,8 +927,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
 y
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen174
-\pgf@nodesepend=\dimen175
+\pgf@nodesepstart=\dimen185
+\pgf@nodesepend=\dimen186
 )
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
 y
@@ -889,10 +942,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen176
-\pgffor@skip=\dimen177
-\pgffor@stack=\toks43
-\pgffor@toks=\toks44
+\pgffor@iter=\dimen187
+\pgffor@skip=\dimen188
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
 ))
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -900,31 +953,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
 de.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count139
-\pgfplotmarksize=\dimen178
+\pgf@plot@mark@count=\count142
+\pgfplotmarksize=\dimen189
 )
-\tikz@lastx=\dimen179
-\tikz@lasty=\dimen180
-\tikz@lastxsaved=\dimen181
-\tikz@lastysaved=\dimen182
-\tikzleveldistance=\dimen183
-\tikzsiblingdistance=\dimen184
-\tikz@figbox=\box44
-\tikz@figbox@bg=\box45
-\tikz@tempbox=\box46
-\tikz@tempbox@bg=\box47
-\tikztreelevel=\count140
-\tikznumberofchildren=\count141
-\tikznumberofcurrentchild=\count142
-\tikz@fig@count=\count143
+\tikz@lastx=\dimen190
+\tikz@lasty=\dimen191
+\tikz@lastxsaved=\dimen192
+\tikz@lastysaved=\dimen193
+\tikzleveldistance=\dimen194
+\tikzsiblingdistance=\dimen195
+\tikz@figbox=\box46
+\tikz@figbox@bg=\box47
+\tikz@tempbox=\box48
+\tikz@tempbox@bg=\box49
+\tikztreelevel=\count143
+\tikznumberofchildren=\count144
+\tikznumberofcurrentchild=\count145
+\tikz@fig@count=\count146
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count144
-\pgfmatrixcurrentcolumn=\count145
-\pgf@matrix@numberofcolumns=\count146
+\pgfmatrixcurrentrow=\count147
+\pgfmatrixcurrentcolumn=\count148
+\pgf@matrix@numberofcolumns=\count149
 )
-\tikz@expandcount=\count147
+\tikz@expandcount=\count150
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarytopaths.code.tex
@@ -946,7 +999,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen185
+\arrowsize=\dimen196
 )) (c:/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip58
 \f@ncyO@elh=\skip59
@@ -967,32 +1020,32 @@ LaTeX Warning: Label `table:instance' multiply defined.
 ) (./Hasil-dan-Pembahasan.aux) (./Kesimpulan.aux) (./Lampiran.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count148
-\scratchdimen=\dimen186
-\scratchbox=\box48
-\nofMPsegments=\count149
-\nofMParguments=\count150
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count151
-\MPscratchDim=\dimen187
-\MPnumerator=\count152
-\makeMPintoPDFobject=\count153
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count151
+\scratchdimen=\dimen197
+\scratchbox=\box50
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen198
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks48
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1028,7 +1081,7 @@ LaTeX Font Info:    ... okay on input line 97.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count154
+\c@lstlisting=\count157
 ABD: EveryShipout initializing macros
 \openout2 = `Cover.aux'.
 
@@ -1148,7 +1201,7 @@ Bab I.
 
 
 ] [2]
-Overfull \hbox (69.83261pt too wide) in paragraph at lines 62--74
+Overfull \hbox (69.83261pt too wide) in paragraph at lines 81--93
 [][] 
  []
 
@@ -1197,7 +1250,7 @@ Underfull \vbox (badness 10000) detected at line 113
  []
 
 
-Overfull \hbox (14.16566pt too wide) in alignment at lines 113--130
+Overfull \hbox (14.16566pt too wide) in alignment at lines 113--129
  [] [] 
  []
 
@@ -1205,36 +1258,43 @@ Overfull \hbox (14.16566pt too wide) in alignment at lines 113--130
 File: img/rel-diagram.png Graphic file (type png)
 
 <use img/rel-diagram.png>
-Package pdftex.def Info: img/rel-diagram.png used on input line 141.
+Package pdftex.def Info: img/rel-diagram.png used on input line 140.
 (pdftex.def)             Requested size: 286.14207pt x 47.42685pt.
- [14 <./img/rel-diagram.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./img/rel-diagram.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15]
-Overfull \hbox (23.93861pt too wide) in paragraph at lines 315--336
+Overfull \hbox (23.93861pt too wide) in paragraph at lines 314--335
  [] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16] <img/concept-tree.png, id=99, 787.44188pt x 740.0147pt>
 File: img/concept-tree.png Graphic file (type png)
 
 <use img/concept-tree.png>
-Package pdftex.def Info: img/concept-tree.png used on input line 346.
+Package pdftex.def Info: img/concept-tree.png used on input line 345.
 (pdftex.def)             Requested size: 393.71997pt x 370.00644pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [17] [18 <./img/concept-tree.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 357.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 356.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 357.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 356.
  [19
 
 ]
@@ -1244,7 +1304,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <img/gui-pref.png, id=110, 201.75375pt x 392.46625pt>
 File: img/gui-pref.png Graphic file (type png)
  <use img/gui-pref.png>
-Package pdftex.def Info: img/gui-pref.png used on input line 458.
+Package pdftex.def Info: img/gui-pref.png used on input line 457.
 (pdftex.def)             Requested size: 121.05318pt x 235.48155pt.
 
 
@@ -1286,50 +1346,111 @@ File: img/flowchart-general-2.png Graphic file (type png)
 <use img/flowchart-general-2.png>
 Package pdftex.def Info: img/flowchart-general-2.png used on input line 616.
 (pdftex.def)             Requested size: 296.30928pt x 324.013pt.
-) [26
+ [26
 
  <./img/flowchart-general-2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
+[]|\OT1/cmr/bx/n/10.95 No Uji
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 683
+ []
+
+[27]
+Underfull \vbox (badness 10000) detected at line 733
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 774--776
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [29] [30]
 \openout2 = `Hasil-dan-Pembahasan.aux'.
 
+ (./Hasil-dan-Pembahasan.tex
+Bab IV.
 
-(./Hasil-dan-Pembahasan.tex)
+Underfull \vbox (badness 10000) detected at line 52
+ []
+
+[31
+
+
+
+] <img/precision_weather.png, id=165, 395.97937pt x 237.88875pt>
+File: img/precision_weather.png Graphic file (type png)
+
+<use img/precision_weather.png>
+Package pdftex.def Info: img/precision_weather.png used on input line 76.
+(pdftex.def)             Requested size: 277.18367pt x 166.52098pt.
+
+<img/precision_time.png, id=166, 391.4625pt x 234.8775pt>
+File: img/precision_time.png Graphic file (type png)
+
+<use img/precision_time.png>
+Package pdftex.def Info: img/precision_time.png used on input line 84.
+(pdftex.def)             Requested size: 274.02187pt x 164.41312pt.
+
+<img/accuracy-gender.png, id=167, 273.27094pt x 217.5628pt>
+File: img/accuracy-gender.png Graphic file (type png)
+
+<use img/accuracy-gender.png>
+Package pdftex.def Info: img/accuracy-gender.png used on input line 92.
+(pdftex.def)             Requested size: 273.27025pt x 217.56227pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/hasil_kuesioner.png, id=168, 454.69875pt x 308.65312pt>
+File: img/hasil_kuesioner.png Graphic file (type png)
+
+<use img/hasil_kuesioner.png>
+Package pdftex.def Info: img/hasil_kuesioner.png used on input line 99.
+(pdftex.def)             Requested size: 318.28694pt x 216.0557pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [32 <./img/precision_weather.png> <./img/precision_time.png>] [33 <./img/accu
+racy-gender.png> <./img/hasil_kuesioner.png>]
 \openout2 = `Kesimpulan.aux'.
 
- (./Kesimpulan.tex) (./main.bbl
-Underfull \hbox (badness 1939) in paragraph at lines 16--22
+ (./Kesimpulan.tex
+Bab V.
+) [34
+
+
+
+] (./main.bbl
+Underfull \hbox (badness 1939) in paragraph at lines 34--40
 \OT1/cmr/m/sc/12 Ramos-Cabrer, M., L[]opez-Nores, M., Garc[]^^Pa-Duque, J.,
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 24--30
+Underfull \hbox (badness 1609) in paragraph at lines 42--48
 []\OT1/cmr/m/sc/12 BPS\OT1/cmr/m/n/12 .  Ran-king de-vi-sa pa-ri-wi-sa-ta ter-h
 a-dap ko-mo-di-tas eks-por la-
  []
 
-[27
-
-
-
-
+[35
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 \OT1/cmtt/m/n/12 http : / / www . kemenpar . go . id / userfiles / file / 4636 
 _
  []
 
-
-Overfull \hbox (42.12799pt too wide) in paragraph at lines 87--94
-\OT1/cmtt/m/n/12 android-[]goog-[]just-[]hit-[]a-[]record-[]88-[]market-[]share
--[]of-[]all-[]smartphones/$\OT1/cmr/m/n/12 ,
- []
-
-) [28]
+) [36]
 \openout2 = `Lampiran.aux'.
 
- (./Lampiran.tex) [29
+ (./Lampiran.tex) [37
 
 
 
@@ -1347,30 +1468,32 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17973 strings out of 493014
- 329113 string characters out of 6137000
- 419521 words of memory out of 5000000
- 21045 multiletter control sequences out of 15000+600000
- 12471 words of font info for 46 fonts, out of 8000000 for 9000
+ 18750 strings out of 493014
+ 341919 string characters out of 6137000
+ 432919 words of memory out of 5000000
+ 21778 multiletter control sequences out of 15000+600000
+ 14635 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,56p,1280b,1681s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c
-:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (39 pages, 434057 bytes).
+ 55i,13n,56p,1280b,1679s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmtt12.pfb>
+Output written on main.pdf (47 pages, 495006 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 243 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

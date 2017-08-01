@@ -38,6 +38,14 @@
 \contentsline {section}{\numberline {3.4}Desain Sistem}{24}
 \contentsline {subsection}{\numberline {3.4.1}Arsitektur Sistem}{24}
 \contentsline {subsection}{\numberline {3.4.2}Flowchart Sistem}{24}
-\contentsline {section}{\numberline {3.5}Contoh Penghitungan}{26}
-\contentsline {chapter}{Daftar Pustaka}{27}
-\contentsline {chapter}{Lampiran}{29}
+\contentsline {section}{\numberline {3.5}Skenario Pengujian}{26}
+\contentsline {subsection}{\numberline {3.5.1}Pengujian dengan Pakar Pariwisata}{26}
+\contentsline {subsection}{\numberline {3.5.2}Pengujian dengan Pengguna Umum}{29}
+\contentsline {chapter}{\numberline {IV}Hasil dan Pembahasan}{31}
+\contentsline {section}{\numberline {4.1}Hasil Pengujian dengan Pakar Pariwisata}{31}
+\contentsline {section}{\numberline {4.2}Hasil Pengujian dengan Pengguna Biasa}{32}
+\contentsline {chapter}{\numberline {V}Kesimpulan}{34}
+\contentsline {section}{\numberline {5.1}Kesimpulan}{34}
+\contentsline {section}{\numberline {5.2}Saran}{34}
+\contentsline {chapter}{Daftar Pustaka}{35}
+\contentsline {chapter}{Lampiran}{37}
